@@ -128,27 +128,23 @@ class _LoginState extends State<Login> {
         LoginModel user = new LoginModel(username: username);
         apiManager.loginUser(user).then((value) async {
           LoginResponse loginResponse = value;
-          final prefs = await SharedPreferences.getInstance();
-          prefs.setString(
-              AppConstants.USER_DETAIL, json.encode(loginResponse.data));
-          Navigator.pop(context);
-          // Fluttertoast.showToast(
-          //     msg:
-          //         "login status => ${loginResponse.data.loginStatus} and OTP => ${loginResponse.data.otp} ",
-          //     toastLength: Toast.LENGTH_SHORT,
-          //     gravity: ToastGravity.CENTER,
-          //     timeInSecForIosWeb: 1,
-          //     backgroundColor: Colors.red,
-          //     textColor: Colors.white,
-          //     fontSize: 16.0);
-          Navigator.pushNamed(
-            context,
-            OTPVerification.routeName,
-            arguments: ScreenArguments(
-              'DATA',
-              _text.text,
-            ),
-          );
+          if(loginResponse.statusCode == 200){
+            final prefs = await SharedPreferences.getInstance();
+            prefs.setString(
+                AppConstants.USER_DETAIL, json.encode(loginResponse.data));
+            Navigator.pop(context);
+            Navigator.pushNamed(
+              context,
+              OTPVerification.routeName,
+              arguments: ScreenArguments(
+                'DATA',
+                _text.text,
+              ),
+            );
+          }else{
+            Navigator.pop(context);
+            snackBar("Invalid Details", Colors.red);
+          }
         }).onError((error, stackTrace) {
           print(error);
           Navigator.pop(context);

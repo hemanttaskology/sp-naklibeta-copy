@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.service.naklibeta.nakli_beta_service_provider"
-4    android:versionCode="6"
-5    android:versionName="1.0.4" >
+4    android:versionCode="9"
+5    android:versionName="1.0.7" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
@@ -22,110 +22,407 @@
 14    <uses-permission android:name="android.permission.INTERNET" />
 14-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:6:5-66
 14-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:6:22-64
-15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:5-79
-15-->[com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:22-76
-16
-17    <application
-17-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:8:5-47:19
-18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-18-->[androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:18-86
-19        android:icon="@mipmap/ic_launcher"
-19-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:9-43
-20        android:label="NakliBeta Partner"
-20-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:8-41
-21        android:requestLegacyExternalStorage="true" >
-21-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:9:8-51
-22        <activity
-22-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:12:11-40:20
-23            android:name="com.service.naklibeta.nakli_beta_service_provider.MainActivity"
-23-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:13:13-41
-24            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-24-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:16:13-163
-25            android:hardwareAccelerated="true"
-25-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:17:13-47
-26            android:launchMode="singleTop"
-26-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:13-43
-27            android:theme="@style/LaunchTheme"
-27-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:15:13-47
-28            android:windowSoftInputMode="adjustResize" >
-28-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:13-55
+15
+16    <queries>
+16-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:8:5-21:15
+17        <intent>
+17-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:9:9-12:18
+18            <action android:name="android.intent.action.VIEW" />
+18-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:13-65
+18-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:21-62
+19
+20            <data android:scheme="https" />
+20-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:13-44
+20-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:19-41
+21        </intent>
+22        <intent>
+22-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:13:9-16:18
+23            <action android:name="android.intent.action.DIAL" />
+23-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:13-65
+23-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:21-62
+24
+25            <data android:scheme="tel" />
+25-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:13-44
+25-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:19-41
+26        </intent>
+27        <intent>
+27-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:17:9-20:18
+28            <action android:name="android.intent.action.SEND" />
+28-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:13-65
+28-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:21-62
 29
-30            <!--
-31                 Specifies an Android theme to apply to this Activity as soon as
-32                 the Android process has started. This theme is visible to the user
-33                 while the Flutter UI initializes. After that, this theme continues
-34                 to determine the Window background behind the Flutter UI.
-35            -->
-36            <meta-data
-36-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:23:13-26:17
-37                android:name="io.flutter.embedding.android.NormalTheme"
-37-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:24:15-70
-38                android:resource="@style/NormalTheme" />
-38-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:25:15-52
-39            <!--
-40                 Displays an Android View that continues showing the launch screen
-41                 Drawable until Flutter paints its first frame, then this splash
-42                 screen fades out. A splash screen is useful to avoid any visual
-43                 gap between the end of Android's launch screen and the painting of
-44                 Flutter's first frame.
-45            -->
-46            <meta-data
-46-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:32:13-35:17
-47                android:name="io.flutter.embedding.android.SplashScreenDrawable"
-47-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:33:15-79
-48                android:resource="@drawable/launch_background" />
-48-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:34:15-61
-49
-50            <intent-filter>
-50-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:36:13-39:29
-51                <action android:name="android.intent.action.MAIN" />
-51-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:37:17-68
-51-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:37:25-66
-52
-53                <category android:name="android.intent.category.LAUNCHER" />
-53-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:17-76
-53-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:27-74
-54            </intent-filter>
-55        </activity>
+30            <data android:mimeType="*/*" />
+30-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:13-44
+30-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:19:19-41
+31        </intent>
+32    </queries>
+33
+34    <uses-permission android:name="android.permission.WAKE_LOCK" />
+34-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
+34-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+35-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+36    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+36-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
+36-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
+37    <uses-permission android:name="android.permission.VIBRATE" />
+37-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:5-66
+37-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:22-63
+38    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+38-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+38-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+39    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+39-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
+39-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
+40    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+40-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:5-110
+40-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
+41
+42    <application
+42-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:22:5-66:19
+43        android:name="androidx.multidex.MultiDexApplication"
+44        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+44-->[androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:24:18-86
+45        android:icon="@mipmap/ic_launcher"
+45-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:25:9-43
+46        android:label="NakliBeta Partner"
+46-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:24:8-41
+47        android:requestLegacyExternalStorage="true"
+47-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:23:8-51
+48        android:usesCleartextTraffic="true" >
+48-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:26:9-44
+49        <activity
+49-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:27:11-59:20
+50            android:name="com.service.naklibeta.nakli_beta_service_provider.MainActivity"
+50-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:28:13-41
+51            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+51-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:31:13-163
+52            android:hardwareAccelerated="true"
+52-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:32:13-47
+53            android:launchMode="singleTop"
+53-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:29:13-43
+54            android:theme="@style/LaunchTheme"
+54-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:30:13-47
+55            android:windowSoftInputMode="adjustResize" >
+55-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:33:13-55
 56
-57        <!--
-58             Don't delete the meta-data below.
-59             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
-60        -->
-61        <meta-data
-61-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:44:9-46:33
-62            android:name="flutterEmbedding"
-62-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:45:13-44
-63            android:value="2" />
-63-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:46:13-30
-64
-65        <provider
-65-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
-66            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
-66-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:9:13-82
-67            android:authorities="com.service.naklibeta.nakli_beta_service_provider.flutter.image_provider"
-67-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
-68            android:exported="false"
-68-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
-69            android:grantUriPermissions="true" >
-69-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
-70            <meta-data
-70-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
-71                android:name="android.support.FILE_PROVIDER_PATHS"
-71-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
-72                android:resource="@xml/flutter_image_picker_file_paths" />
-72-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
-73        </provider>
-74
-75        <activity
-75-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
-76            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
-76-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
-77            android:exported="false"
-77-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
-78            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-78-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
-79    </application>
-80
-81</manifest>
+57            <!--
+58                 Specifies an Android theme to apply to this Activity as soon as
+59                 the Android process has started. This theme is visible to the user
+60                 while the Flutter UI initializes. After that, this theme continues
+61                 to determine the Window background behind the Flutter UI.
+62            -->
+63            <meta-data
+63-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:13-41:17
+64                android:name="io.flutter.embedding.android.NormalTheme"
+64-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:39:15-70
+65                android:resource="@style/NormalTheme" />
+65-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:40:15-52
+66            <!--
+67                 Displays an Android View that continues showing the launch screen
+68                 Drawable until Flutter paints its first frame, then this splash
+69                 screen fades out. A splash screen is useful to avoid any visual
+70                 gap between the end of Android's launch screen and the painting of
+71                 Flutter's first frame.
+72            -->
+73            <meta-data
+73-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:47:13-50:17
+74                android:name="io.flutter.embedding.android.SplashScreenDrawable"
+74-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:48:15-79
+75                android:resource="@drawable/launch_background" />
+75-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:49:15-61
+76
+77            <intent-filter>
+77-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:51:13-54:29
+78                <action android:name="android.intent.action.MAIN" />
+78-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:52:17-68
+78-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:52:25-66
+79
+80                <category android:name="android.intent.category.LAUNCHER" />
+80-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:53:17-76
+80-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:53:27-74
+81            </intent-filter>
+82            <intent-filter>
+82-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:55:15-58:31
+83                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+83-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:56:19-71
+83-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:56:27-68
+84
+85                <category android:name="android.intent.category.DEFAULT" />
+85-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:57:19-78
+85-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:57:29-75
+86            </intent-filter>
+87        </activity>
+88
+89        <!--
+90             Don't delete the meta-data below.
+91             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+92        -->
+93        <meta-data
+93-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:63:9-65:33
+94            android:name="flutterEmbedding"
+94-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:64:13-44
+95            android:value="2" />
+95-->C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:65:13-30
+96
+97        <service
+97-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:12:9-15:72
+98            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+98-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:13:13-107
+99            android:exported="false"
+99-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+100            android:permission="android.permission.BIND_JOB_SERVICE" />
+100-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:15:13-69
+101        <service
+101-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:16:9-22:19
+102            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+102-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:17:13-97
+103            android:exported="false" >
+103-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+104            <intent-filter>
+104-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+105                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+105-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+105-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+106            </intent-filter>
+107        </service>
+108
+109        <receiver
+109-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:24:9-31:20
+110            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+110-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:25:13-98
+111            android:exported="true"
+111-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:26:13-36
+112            android:permission="com.google.android.c2dm.permission.SEND" >
+112-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:27:13-73
+113            <intent-filter>
+113-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+114                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+114-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+114-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+115            </intent-filter>
+116        </receiver>
+117
+118        <service
+118-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:33:9-37:19
+119            android:name="com.google.firebase.components.ComponentDiscoveryService"
+119-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:33:18-89
+120            android:directBootAware="true"
+120-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+121            android:exported="false" >
+121-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:51:13-37
+122            <meta-data
+122-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:34:13-36:85
+123                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+123-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:35:17-128
+124                android:value="com.google.firebase.components.ComponentRegistrar" />
+124-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:36:17-82
+125            <meta-data
+125-->[:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+126                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+126-->[:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
+127                android:value="com.google.firebase.components.ComponentRegistrar" />
+127-->[:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+128            <meta-data
+128-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+129                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+129-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+130                android:value="com.google.firebase.components.ComponentRegistrar" />
+130-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+131            <meta-data
+131-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+132                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+132-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+133                android:value="com.google.firebase.components.ComponentRegistrar" />
+133-->[com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+134            <meta-data
+134-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
+135                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+135-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+136                android:value="com.google.firebase.components.ComponentRegistrar" />
+136-->[com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+137            <meta-data
+137-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+138                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+138-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+139                android:value="com.google.firebase.components.ComponentRegistrar" />
+139-->[com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+140        </service>
+141
+142        <provider
+142-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:39:9-43:38
+143            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+143-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:40:13-102
+144            android:authorities="com.service.naklibeta.nakli_beta_service_provider.flutterfirebasemessaginginitprovider"
+144-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:41:13-88
+145            android:exported="false"
+145-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:42:13-37
+146            android:initOrder="99" />
+146-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:43:13-35
+147        <provider
+147-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
+148            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+148-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:9:13-82
+149            android:authorities="com.service.naklibeta.nakli_beta_service_provider.flutter.image_provider"
+149-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:10:13-74
+150            android:exported="false"
+150-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:11:13-37
+151            android:grantUriPermissions="true" >
+151-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:12:13-47
+152            <meta-data
+152-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:13:13-15:75
+153                android:name="android.support.FILE_PROVIDER_PATHS"
+153-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+154                android:resource="@xml/flutter_image_picker_file_paths" />
+154-->[:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
+155        </provider>
+156
+157        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver" />
+157-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:9-106
+157-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:19-103
+158        <receiver android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver" >
+158-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:9-20:20
+158-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:19-107
+159            <intent-filter>
+159-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:14:13-19:29
+160                <action android:name="android.intent.action.BOOT_COMPLETED" />
+160-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:17-79
+160-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:25-76
+161                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+161-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:17-84
+161-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:25-81
+162                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+162-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:17-82
+162-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:25-79
+163                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+163-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:17-82
+163-->[:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:25-79
+164            </intent-filter>
+165        </receiver>
+166
+167        <activity
+167-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
+168            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+168-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
+169            android:exported="false"
+169-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:10:13-37
+170            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+170-->[:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
+171
+172        <receiver
+172-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+173            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+173-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+174            android:exported="true"
+174-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+175            android:permission="com.google.android.c2dm.permission.SEND" >
+175-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+176            <intent-filter>
+176-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+177                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+177-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+177-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+178            </intent-filter>
+179        </receiver>
+180        <!--
+181             FirebaseMessagingService performs security checks at runtime,
+182             but set to not exported to explicitly avoid allowing another app to call it.
+183        -->
+184        <service
+184-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+185            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+185-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+186            android:directBootAware="true"
+186-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+187            android:exported="false" >
+187-->[com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+188            <intent-filter android:priority="-500" >
+188-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+189                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+189-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+189-->[:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+190            </intent-filter>
+191        </service>
+192        <service
+192-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+193            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+193-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+194            android:exported="false" >
+194-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+195            <meta-data
+195-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+196                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+196-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+197                android:value="cct" />
+197-->[com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+198        </service>
+199
+200        <provider
+200-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+201            android:name="com.google.firebase.provider.FirebaseInitProvider"
+201-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+202            android:authorities="com.service.naklibeta.nakli_beta_service_provider.firebaseinitprovider"
+202-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+203            android:directBootAware="true"
+203-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+204            android:exported="false"
+204-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+205            android:initOrder="100" />
+205-->[com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+206
+207        <receiver
+207-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
+208            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+208-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
+209            android:enabled="true"
+209-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
+210            android:exported="false" >
+210-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
+211        </receiver>
+212
+213        <service
+213-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
+214            android:name="com.google.android.gms.measurement.AppMeasurementService"
+214-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+215            android:enabled="true"
+215-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
+216            android:exported="false" />
+216-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
+217        <service
+217-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
+218            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+218-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+219            android:enabled="true"
+219-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
+220            android:exported="false"
+220-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
+221            android:permission="android.permission.BIND_JOB_SERVICE" />
+221-->[com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
+222
+223        <meta-data
+223-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+224            android:name="com.google.android.gms.version"
+224-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+225            android:value="@integer/google_play_services_version" />
+225-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+226
+227        <service
+227-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+228            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+228-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+229            android:exported="false"
+229-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+230            android:permission="android.permission.BIND_JOB_SERVICE" >
+230-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+231        </service>
+232
+233        <receiver
+233-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+234            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+234-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132
+235            android:exported="false" />
+235-->[com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+236    </application>
+237
+238</manifest>

@@ -334,7 +334,6 @@ class JobDetailsState extends State<JobDetails> {
                   child: Text(
                     (JobStatusType.PENDING.buttonText),
                     style: TextStyle(
-
                         color: Colors.white,
                         fontSize: 16,
                         fontWeight: FontWeight.bold),

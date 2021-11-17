@@ -1,13 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:2:1-46:12
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:2:1-15:12
 MERGED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:2:1-19:12
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:shared_preferences] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\shared_preferences\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:sqflite] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
+MERGED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:2:1-23:12
 MERGED from [:path_provider] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:wakelock] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\wakelock\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:webview_flutter_android] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\webview_flutter_android\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
@@ -16,41 +19,72 @@ MERGED from [:video_player] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\video_p
 MERGED from [:package_info_plus] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\package_info_plus\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:fluttertoast] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\fluttertoast\intermediates\library_manifest\release\AndroidManifest.xml:2:1-7:12
 MERGED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:2:1-14:12
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\699f67f2d72ad9902250b3e1c41f0647\exifinterface-1.3.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cbbb6921b2521959953b0c781fe5c304\webkit-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b2ea5e05fb4fb851184e9b0af980bf49\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f09b8ddd78b021f724ecbb270644c7ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9c8ace75a2893fac3be87cf34cd39b5\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b712161584c0f03d21bcedf0af2bd366\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:17:1-24:12
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
-INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7e8276950b03f3957fd8ab0eab60ccbc\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a20be4a04e20a7650c7478728658bc1e\multidex-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:17:1-58:12
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\152cf35ca788300e75c67c10e5468f37\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:15:1-40:12
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26f41bb46c39620ddaf68d1901acb8cb\exifinterface-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b097e8c0009abf937328f3c133a7f445\media-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3cdd832d720c64d4c13f082f8cd31b9d\webkit-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1122a792f29ce0490a3b6cf2f1532603\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9177257f6a38c762ec7daaa192bba67c\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e4b564492752f32e8bdb64d4eee0ad43\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1efd4d670b782121413db71f55ffd6e\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a089f2881ca80c60217aa47549c2dd5d\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1e4ee6c861c88f7eee86fc68b8f25594\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ea5f23fc330f1fb5c0534a71cb9a6a80\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2999466eb8f33d29a743c1f3a569ab54\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e66987e9eeec220f835eaf0f8632053f\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a52b4f8de4766ddc77e5101758fa07b7\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\c4e9f00054a3848abeb01e8ba71a1e76\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d11553cc3c9f1f1fb0b3bb1165672652\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\52ba9f913717dc899b4bc0031a846942\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\dd31547021a5dfb6b4fb0ba24001e9ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f908da4c0b1d2b39cc2a33877a685447\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2821246218eaa288e414690b3906787f\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\8166038e0a8e9c889a6db09421715401\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cb7ab51915ea90b69e7423c0bfb08a17\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5d4797714e3ea6d715626a65eeef5ca7\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\4ab187d26aa83124667691230da00bb6\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f1914f7225329341d4aceb6e843214b2\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a09f0aa6584d23d6fa6312e27d36ca\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:17:1-26:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6907a87d12d7bfd77c23a49c9df5a491\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\efa149e61c7f6d03b6c67b134c87b5c6\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d6e067bf4830e454a0e959054d98e190\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\734455655cb67c62e802de75a7dab785\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d72487f7520dc11653a6ad25ea663ef2\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
+INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
 	package
 		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:2:5-64
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-48:12
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:1-67:12
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:1:11-69
@@ -68,72 +102,174 @@ ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidMa
 		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:5:22-77
 uses-permission#android.permission.INTERNET
 ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:6:5-66
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:7:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:8:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:23:5-67
 	android:name
 		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:6:22-64
+queries
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:8:5-21:15
+intent#action:name:android.intent.action.VIEW+data:scheme:https
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:9:9-12:18
+action#android.intent.action.VIEW
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:13-65
+	android:name
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:21-62
+data
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:13-44
+	android:scheme
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:19-41
+	android:mimeType
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:19:19-41
+intent#action:name:android.intent.action.DIAL+data:scheme:tel
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:13:9-16:18
+action#android.intent.action.DIAL
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:13-65
+	android:name
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:21-62
+intent#action:name:android.intent.action.SEND+data:mimeType:*/*
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:17:9-20:18
+action#android.intent.action.SEND
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:13-65
+	android:name
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:21-62
 application
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:8:5-47:19
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:22:5-66:19
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:11:5-44:19
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:7:5-13:19
 MERGED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:5-17:19
 MERGED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:7:5-17:19
+MERGED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:11:5-21:19
+MERGED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:11:5-21:19
 MERGED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
 MERGED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:7:5-12:19
-MERGED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7e8276950b03f3957fd8ab0eab60ccbc\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7e8276950b03f3957fd8ab0eab60ccbc\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:27:5-56:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1122a792f29ce0490a3b6cf2f1532603\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1122a792f29ce0490a3b6cf2f1532603\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e4b564492752f32e8bdb64d4eee0ad43\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e4b564492752f32e8bdb64d4eee0ad43\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:28:5-29:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1efd4d670b782121413db71f55ffd6e\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1efd4d670b782121413db71f55ffd6e\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a089f2881ca80c60217aa47549c2dd5d\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a089f2881ca80c60217aa47549c2dd5d\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1e4ee6c861c88f7eee86fc68b8f25594\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1e4ee6c861c88f7eee86fc68b8f25594\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:25:5-39:19
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\AndroidManifest.xml:7:5-20
 	android:requestLegacyExternalStorage
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:9:8-51
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:23:8-51
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:24:18-86
 	android:label
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:10:8-41
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:24:8-41
 	android:icon
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:11:9-43
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:25:9-43
+	android:usesCleartextTraffic
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:26:9-44
 activity#com.service.naklibeta.nakli_beta_service_provider.MainActivity
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:12:11-40:20
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:27:11-59:20
 	android:launchMode
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:14:13-43
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:29:13-43
 	android:hardwareAccelerated
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:17:13-47
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:32:13-47
 	android:windowSoftInputMode
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:18:13-55
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:33:13-55
 	android:configChanges
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:16:13-163
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:31:13-163
 	android:theme
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:15:13-47
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:30:13-47
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:28:13-41
 meta-data#io.flutter.embedding.android.NormalTheme
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:23:13-26:17
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:13-41:17
 	android:resource
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:25:15-52
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:40:15-52
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:24:15-70
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:39:15-70
 meta-data#io.flutter.embedding.android.SplashScreenDrawable
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:32:13-35:17
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:47:13-50:17
 	android:resource
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:34:15-61
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:49:15-61
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:33:15-79
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:48:15-79
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:36:13-39:29
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:51:13-54:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:37:17-68
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:52:17-68
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:37:25-66
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:52:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:17-76
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:53:17-76
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:38:27-74
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:53:27-74
+intent-filter#action:name:FLUTTER_NOTIFICATION_CLICK+category:name:android.intent.category.DEFAULT
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:55:15-58:31
+action#FLUTTER_NOTIFICATION_CLICK
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:56:19-71
+	android:name
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:56:27-68
+category#android.intent.category.DEFAULT
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:57:19-78
+	android:name
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:57:29-75
 meta-data#flutterEmbedding
-ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:44:9-46:33
+ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:63:9-65:33
 	android:value
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:46:13-30
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:65:13-30
 	android:name
-		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:45:13-44
+		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml:64:13-44
 uses-sdk
 INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:flutter_plugin_android_lifecycle] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_plugin_android_lifecycle\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
@@ -142,6 +278,8 @@ MERGED from [:shared_preferences] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\s
 MERGED from [:shared_preferences] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\shared_preferences\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:sqflite] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\sqflite\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
+MERGED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\path_provider\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:wakelock] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\wakelock\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
@@ -158,48 +296,110 @@ MERGED from [:fluttertoast] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter
 MERGED from [:fluttertoast] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\fluttertoast\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
 MERGED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:5:5-44
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\699f67f2d72ad9902250b3e1c41f0647\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\699f67f2d72ad9902250b3e1c41f0647\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cbbb6921b2521959953b0c781fe5c304\webkit-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cbbb6921b2521959953b0c781fe5c304\webkit-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b2ea5e05fb4fb851184e9b0af980bf49\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b2ea5e05fb4fb851184e9b0af980bf49\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f09b8ddd78b021f724ecbb270644c7ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f09b8ddd78b021f724ecbb270644c7ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9c8ace75a2893fac3be87cf34cd39b5\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9c8ace75a2893fac3be87cf34cd39b5\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2fd9120a6da4df3dbabdd40f6a2d8995\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\eb26273f8f7192460456ce62b9bdf9ef\viewpager-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d9536c14ffde0b7289f12ba6def6bfa4\loader-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\68dbf8ea01a1dbd974fc87b5753550f0\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bc28a09d8d2212ffd5788fe6c1853326\customview-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\fb333fb43575d8a3b51161295454427f\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cad25976877a6ae855ef6821534f58a1\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b712161584c0f03d21bcedf0af2bd366\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b712161584c0f03d21bcedf0af2bd366\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5f606c30f064eed94124828de37fadc0\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7e8276950b03f3957fd8ab0eab60ccbc\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7e8276950b03f3957fd8ab0eab60ccbc\jetified-firebase-analytics-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a20be4a04e20a7650c7478728658bc1e\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a20be4a04e20a7650c7478728658bc1e\multidex-2.0.0\AndroidManifest.xml:20:5-43
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\152cf35ca788300e75c67c10e5468f37\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\152cf35ca788300e75c67c10e5468f37\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26f41bb46c39620ddaf68d1901acb8cb\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26f41bb46c39620ddaf68d1901acb8cb\exifinterface-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b097e8c0009abf937328f3c133a7f445\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b097e8c0009abf937328f3c133a7f445\media-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3cdd832d720c64d4c13f082f8cd31b9d\webkit-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.webkit:webkit:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3cdd832d720c64d4c13f082f8cd31b9d\webkit-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1122a792f29ce0490a3b6cf2f1532603\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1122a792f29ce0490a3b6cf2f1532603\jetified-firebase-iid-interop-17.1.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9177257f6a38c762ec7daaa192bba67c\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9177257f6a38c762ec7daaa192bba67c\jetified-firebase-installations-interop-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e4b564492752f32e8bdb64d4eee0ad43\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e4b564492752f32e8bdb64d4eee0ad43\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1efd4d670b782121413db71f55ffd6e\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1efd4d670b782121413db71f55ffd6e\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a089f2881ca80c60217aa47549c2dd5d\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a089f2881ca80c60217aa47549c2dd5d\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1e4ee6c861c88f7eee86fc68b8f25594\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1e4ee6c861c88f7eee86fc68b8f25594\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ea5f23fc330f1fb5c0534a71cb9a6a80\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ea5f23fc330f1fb5c0534a71cb9a6a80\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2999466eb8f33d29a743c1f3a569ab54\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2999466eb8f33d29a743c1f3a569ab54\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e66987e9eeec220f835eaf0f8632053f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\e66987e9eeec220f835eaf0f8632053f\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a52b4f8de4766ddc77e5101758fa07b7\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a52b4f8de4766ddc77e5101758fa07b7\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\c4e9f00054a3848abeb01e8ba71a1e76\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\c4e9f00054a3848abeb01e8ba71a1e76\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d11553cc3c9f1f1fb0b3bb1165672652\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d11553cc3c9f1f1fb0b3bb1165672652\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\52ba9f913717dc899b4bc0031a846942\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-hls:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\52ba9f913717dc899b4bc0031a846942\jetified-exoplayer-hls-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\dd31547021a5dfb6b4fb0ba24001e9ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-dash:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\dd31547021a5dfb6b4fb0ba24001e9ef\jetified-exoplayer-dash-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f908da4c0b1d2b39cc2a33877a685447\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-smoothstreaming:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f908da4c0b1d2b39cc2a33877a685447\jetified-exoplayer-smoothstreaming-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2821246218eaa288e414690b3906787f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2821246218eaa288e414690b3906787f\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\8166038e0a8e9c889a6db09421715401\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\8166038e0a8e9c889a6db09421715401\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cb7ab51915ea90b69e7423c0bfb08a17\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cb7ab51915ea90b69e7423c0bfb08a17\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5d4797714e3ea6d715626a65eeef5ca7\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\5d4797714e3ea6d715626a65eeef5ca7\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\4ab187d26aa83124667691230da00bb6\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\4ab187d26aa83124667691230da00bb6\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f1914f7225329341d4aceb6e843214b2\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f1914f7225329341d4aceb6e843214b2\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a09f0aa6584d23d6fa6312e27d36ca\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-extractor:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a09f0aa6584d23d6fa6312e27d36ca\jetified-exoplayer-extractor-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6907a87d12d7bfd77c23a49c9df5a491\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6907a87d12d7bfd77c23a49c9df5a491\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\efa149e61c7f6d03b6c67b134c87b5c6\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\efa149e61c7f6d03b6c67b134c87b5c6\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d6e067bf4830e454a0e959054d98e190\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d6e067bf4830e454a0e959054d98e190\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\734455655cb67c62e802de75a7dab785\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\734455655cb67c62e802de75a7dab785\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d72487f7520dc11653a6ad25ea663ef2\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d72487f7520dc11653a6ad25ea663ef2\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
+MERGED from [com.jakewharton.threetenabp:threetenabp:1.2.3] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\AndroidManifest.xml:5:5-44
 INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -210,6 +410,126 @@ INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\Androi
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 		ADDED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Taskology\Desktop\NB-SP-1.0.2\android\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:23:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:9:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:8:22-65
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:7:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:9:22-76
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:12:9-15:72
+	android:exported
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:14:13-37
+	android:permission
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:15:13-69
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:13:13-107
+service#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:16:9-22:19
+	android:exported
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:18:13-37
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:17:13-97
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:19:13-21:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:17-78
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:20:25-75
+receiver#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:24:9-31:20
+	android:exported
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:27:13-73
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:25:13-98
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:28:13-30:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:17-81
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:29:25-78
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:33:9-37:19
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:8:9-12:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:49:9-55:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:51:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:33:18-89
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:34:13-36:85
+	android:value
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:36:17-82
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:35:17-128
+provider#io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider
+ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:39:9-43:38
+	android:authorities
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:41:13-88
+	android:exported
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:42:13-37
+	android:initOrder
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:43:13-35
+	android:name
+		ADDED from [:firebase_messaging] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_messaging\intermediates\library_manifest\release\AndroidManifest.xml:40:13-102
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar
+ADDED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\firebase_core\intermediates\library_manifest\release\AndroidManifest.xml:10:17-124
 provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
 ADDED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:8:9-16:20
 	android:grantUriPermissions
@@ -226,6 +546,44 @@ ADDED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_pi
 		ADDED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:15:17-72
 	android:name
 		ADDED from [:image_picker] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\image_picker\intermediates\library_manifest\release\AndroidManifest.xml:14:17-67
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.VIBRATE
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:5-66
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:8:22-63
+uses-permission#android.permission.USE_FULL_SCREEN_INTENT
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:5-81
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:9:22-78
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:9-106
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:12:19-103
+receiver#com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:9-20:20
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:13:19-107
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.MY_PACKAGE_REPLACED+action:name:android.intent.action.QUICKBOOT_POWERON+action:name:com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:14:13-19:29
+action#android.intent.action.BOOT_COMPLETED
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:17-79
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:15:25-76
+action#android.intent.action.MY_PACKAGE_REPLACED
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:17-84
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:16:25-81
+action#android.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:17:25-79
+action#com.htc.intent.action.QUICKBOOT_POWERON
+ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:17-82
+	android:name
+		ADDED from [:flutter_local_notifications] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_local_notifications\intermediates\library_manifest\release\AndroidManifest.xml:18:25-79
 activity#io.flutter.plugins.urllauncher.WebViewActivity
 ADDED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:8:9-11:74
 	android:exported
@@ -234,9 +592,127 @@ ADDED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_laun
 		ADDED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:11:13-71
 	android:name
 		ADDED from [:url_launcher] C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\url_launcher\intermediates\library_manifest\release\AndroidManifest.xml:9:13-74
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:24:5-79
-MERGED from [com.google.android.exoplayer:exoplayer-common:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\AndroidManifest.xml:24:5-79
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:11:5-82
+MERGED from [com.google.android.gms:play-services-cloud-messaging:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\03e70712b2a8b324a7902ffee708e20e\jetified-play-services-cloud-messaging-17.0.0\AndroidManifest.xml:11:5-82
 	android:name
-		ADDED from [com.google.android.exoplayer:exoplayer-core:2.14.1] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\AndroidManifest.xml:24:22-76
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:25:22-79
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:28:9-35:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:30:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:31:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:29:13-78
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:41:9-48:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:44:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:43:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:42:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:52:13-54:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:54:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:23.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\AndroidManifest.xml:53:17-119
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:18.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2143f63b0fbb6459807ac91f4bf988f5\jetified-firebase-datatransport-18.0.0\AndroidManifest.xml:29:17-115
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\AndroidManifest.xml:33:17-94
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\AndroidManifest.xml:31:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2733ee416a9a3a7703f654641d3c99ee\jetified-firebase-installations-17.0.0\AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\AndroidManifest.xml:27:13-77
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\AndroidManifest.xml:40:13-87
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.0.0] C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\AndroidManifest.xml:33:13-132

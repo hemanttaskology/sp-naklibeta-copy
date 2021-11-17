@@ -123,7 +123,24 @@
 # End of content from E:\flutter\packages\flutter_tools\gradle\flutter_proguard_rules.pro
 # The proguard configuration file for the following section is C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\app\intermediates\aapt_proguard_file\release\aapt_rules.txt
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.multidex.MultiDexApplication { <init>(); }
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver { <init>(); }
+-keep class com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
 -keep class com.service.naklibeta.nakli_beta_service_provider.MainActivity { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver { <init>(); }
+-keep class io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService { <init>(); }
 -keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
 -keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
 
@@ -140,7 +157,67 @@
 -keep class androidx.lifecycle.DefaultLifecycleObserver
 
 # End of content from C:\Users\Taskology\Desktop\NB-SP-1.0.2\build\flutter_plugin_android_lifecycle\intermediates\consumer_proguard_dir\release\lib0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cbbb6921b2521959953b0c781fe5c304\webkit-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\proguard.txt
+# Analytics library is optional.
+# Access to this class is protected by try/catch(NoClassDefFoundError e)
+# b/35686744 Don't fail during proguard if the class is missing from the APK.
+-dontwarn com.google.android.gms.measurement.AppMeasurement*
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\faa7fba886dec8540a116fa216c20176\jetified-firebase-messaging-23.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\12200954332df4e7949ae523e1cf886f\jetified-transport-backend-cct-3.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\152cf35ca788300e75c67c10e5468f37\jetified-firebase-encoders-json-18.0.0\proguard.txt
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\152cf35ca788300e75c67c10e5468f37\jetified-firebase-encoders-json-18.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\proguard.txt
+# Can be removed once we pull in a dependency on firebase-common that includes
+# https://github.com/firebase/firebase-android-sdk/pull/1472/commits/856f1ca1151cdd88679bbc778892f23dfa34fc06#diff-a2ed34b5a38b4c6c686b09e54865eb48
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3b9b1466583b991a1b83dbf130da0c27\jetified-play-services-measurement-api-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\proguard.txt
+-dontwarn com.google.firebase.platforminfo.KotlinDetector
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3302300f084732ea1b649fcba8a3ed24\jetified-firebase-common-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b097e8c0009abf937328f3c133a7f445\media-1.1.0\proguard.txt
+# Copyright (C) 2017 The Android Open Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class android.support.v4.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+
+# Prevent Parcelable objects from being removed or renamed.
+-keep class androidx.media.** implements android.os.Parcelable {
+    public static final android.os.Parcelable$Creator *;
+}
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b097e8c0009abf937328f3c133a7f445\media-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3cdd832d720c64d4c13f082f8cd31b9d\webkit-1.0.0\proguard.txt
 # Copyright 2018 The Chromium Authors. All rights reserved.
 # Use of this source code is governed by a BSD-style license that can be
 # found in the LICENSE file.
@@ -169,8 +246,125 @@
 -keepnames public class androidx.webkit.WebViewClientCompat
 
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cbbb6921b2521959953b0c781fe5c304\webkit-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3cdd832d720c64d4c13f082f8cd31b9d\webkit-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\783a0553da934a295c5dcddfba53fba1\jetified-play-services-measurement-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6fd04ec86f8507afc97be954097e9dfb\jetified-play-services-measurement-sdk-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\588bac7ea72a08003b16e5c93c703643\jetified-play-services-measurement-impl-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7dfb82a73e1f93c56b2f69730f2738c7\jetified-play-services-measurement-sdk-api-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\proguard.txt
+# We keep all fields for every generated proto file as the runtime uses
+# reflection over them that ProGuard cannot detect. Without this keep
+# rule, fields may be removed that would cause runtime failures.
+-keepclassmembers class * extends com.google.android.gms.internal.measurement.zzjx {
+  <fields>;
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\7d5cd8b3f757cccc7f708bf693d98d44\jetified-play-services-measurement-base-20.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\proguard.txt
+# Proguard flags for consumers of the Google Play services SDK
+# https://developers.google.com/android/guides/setup#add_google_play_services_to_your_project
+
+# Keep SafeParcelable NULL value, needed for reflection by DowngradeableSafeParcel
+-keepclassmembers public class com.google.android.gms.common.internal.safeparcel.SafeParcelable {
+    public static final *** NULL;
+}
+
+# Needed for Parcelable/SafeParcelable classes & their creators to not get renamed, as they are
+# found via reflection.
+-keep class com.google.android.gms.common.internal.ReflectedParcelable
+-keepnames class * implements com.google.android.gms.common.internal.ReflectedParcelable
+-keepclassmembers class * implements android.os.Parcelable {
+  public static final *** CREATOR;
+}
+
+# Keep the classes/members we need for client functionality.
+-keep @interface androidx.annotation.Keep
+-keep @androidx.annotation.Keep class *
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <fields>;
+}
+-keepclasseswithmembers class * {
+  @androidx.annotation.Keep <methods>;
+}
+
+# Keep the names of classes/members we need for client functionality.
+-keep @interface com.google.android.gms.common.annotation.KeepName
+-keepnames @com.google.android.gms.common.annotation.KeepName class *
+-keepclassmembernames class * {
+  @com.google.android.gms.common.annotation.KeepName *;
+}
+
+# Keep Dynamite API entry points
+-keep @interface com.google.android.gms.common.util.DynamiteApi
+-keep @com.google.android.gms.common.util.DynamiteApi public class * {
+  public <fields>;
+  public <methods>;
+}
+
+# Needed when building against pre-Marshmallow SDK.
+-dontwarn android.security.NetworkSecurityPolicy
+
+# Needed when building against Marshmallow SDK.
+-dontwarn android.app.Notification
+
+# Protobuf has references not on the Android boot classpath
+-dontwarn sun.misc.Unsafe
+-dontwarn libcore.io.Memory
+
+# Internal Google annotations for generating Proguard keep rules.
+-dontwarn com.google.android.apps.common.proguard.UsedBy*
+
+# Annotations referenced by the SDK but whose definitions are contained in
+# non-required dependencies.
+-dontwarn javax.annotation.**
+-dontwarn org.checkerframework.**
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9d3ebf861ced2bc6fde51a467c749fe4\jetified-play-services-basement-17.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\proguard.txt
+# Never inline methods, but allow shrinking and obfuscation.
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.ViewCompat$Api* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$Impl* {
+  <methods>;
+}
+-keepclassmembernames,allowobfuscation,allowshrinking class androidx.core.view.WindowInsetsCompat$BuilderImpl* {
+  <methods>;
+}
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\3ed6b84209f648dd5f4c1acf00852cbb\core-1.3.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\proguard.txt
 # Proguard rules specific to the core module.
 
 # Constant folding for resource integers may mean that a resource passed to this method appears to be unused. Keep the method to prevent this from happening.
@@ -238,13 +432,8 @@
   <init>();
 }
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\60b85d32c76f6174d43e445a6aa2cefb\jetified-exoplayer-core-2.14.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\proguard.txt
-# aapt2 is not (yet) keeping FQCNs defined in the appComponentFactory <application> attribute
--keep class androidx.core.app.CoreComponentFactory
-
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2e94107f30f39be366a17347c2bf100b\core-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b881feb6ad42d758b31cd7b2abcb4d76\jetified-exoplayer-core-2.14.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\8166038e0a8e9c889a6db09421715401\lifecycle-runtime-2.2.0\proguard.txt
 -keepattributes *Annotation*
 
 -keepclassmembers enum androidx.lifecycle.Lifecycle$Event {
@@ -264,8 +453,8 @@
 
 # this rule is need to work properly when app is compiled with api 28, see b/142778206
 -keepclassmembers class androidx.lifecycle.ReportFragment$LifecycleCallbacks { *; }
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\ca6b214160bd0909b103aa12202ef51c\lifecycle-runtime-2.2.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\8166038e0a8e9c889a6db09421715401\lifecycle-runtime-2.2.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cb7ab51915ea90b69e7423c0bfb08a17\jetified-savedstate-1.0.0\proguard.txt
 # Copyright (C) 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -284,8 +473,22 @@
     <init>();
 }
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\2271d874344878e62b9a8e309af0c39d\jetified-savedstate-1.0.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b712161584c0f03d21bcedf0af2bd366\jetified-exoplayer-extractor-2.14.1\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\cb7ab51915ea90b69e7423c0bfb08a17\jetified-savedstate-1.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f1914f7225329341d4aceb6e843214b2\jetified-firebase-components-17.0.0\proguard.txt
+-dontwarn com.google.firebase.components.Component$Instantiation
+-dontwarn com.google.firebase.components.Component$ComponentType
+
+-keep class * implements com.google.firebase.components.ComponentRegistrar
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\f1914f7225329341d4aceb6e843214b2\jetified-firebase-components-17.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\proguard.txt
+-keep public class * implements androidx.versionedparcelable.VersionedParcelable
+-keep public class android.support.**Parcelizer { *; }
+-keep public class androidx.**Parcelizer { *; }
+-keep public class androidx.versionedparcelable.ParcelImpl
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\bf69db3cd970caed8f4f2566a4788bae\versionedparcelable-1.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a09f0aa6584d23d6fa6312e27d36ca\jetified-exoplayer-extractor-2.14.1\proguard.txt
 # Proguard rules specific to the extractor module.
 
 # Methods accessed via reflection in DefaultExtractorsFactory
@@ -303,8 +506,8 @@
 -dontwarn kotlin.annotations.jvm.**
 -dontwarn javax.annotation.**
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b712161584c0f03d21bcedf0af2bd366\jetified-exoplayer-extractor-2.14.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a09f0aa6584d23d6fa6312e27d36ca\jetified-exoplayer-extractor-2.14.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\proguard.txt
 # Proguard rules specific to the common module.
 
 # Don't warn about checkerframework and Kotlin annotations
@@ -328,15 +531,18 @@
 # This is needed for ProGuard but not R8.
 -keepclassmembernames class com.google.common.base.Function { *; }
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\9c869d6c39afd30e0ee6a960de621a9b\jetified-exoplayer-common-2.14.1\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\proguard.txt
--keep public class * implements androidx.versionedparcelable.VersionedParcelable
--keep public class android.support.**Parcelizer { *; }
--keep public class androidx.**Parcelizer { *; }
--keep public class androidx.versionedparcelable.ParcelImpl
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\1c4a2433bc30db90da6049af82fdf87b\jetified-exoplayer-common-2.14.1\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\96aee308bccd03bc62c306516c23a410\versionedparcelable-1.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\proguard.txt
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\a1a8534c906a0357f1eb5dff1a6e4134\jetified-transport-runtime-3.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6907a87d12d7bfd77c23a49c9df5a491\jetified-transport-api-3.0.0\proguard.txt
+-dontwarn com.google.auto.value.AutoValue
+-dontwarn com.google.auto.value.AutoValue$Builder
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6907a87d12d7bfd77c23a49c9df5a491\jetified-transport-api-3.0.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d72487f7520dc11653a6ad25ea663ef2\lifecycle-viewmodel-2.1.0\proguard.txt
 -keepclassmembers,allowobfuscation class * extends androidx.lifecycle.ViewModel {
     <init>();
 }
@@ -345,8 +551,8 @@
     <init>(android.app.Application);
 }
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\15792e6083b2b5b5a7ffa285d47daa24\lifecycle-viewmodel-2.1.0\proguard.txt
-# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\fb5516cc460103a833816a1c73d505b6\rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\d72487f7520dc11653a6ad25ea663ef2\lifecycle-viewmodel-2.1.0\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b5440b9c2cc0902ba0381ce03994768b\rules\lib\META-INF\proguard\androidx-annotations.pro
 -keep,allowobfuscation @interface androidx.annotation.Keep
 -keep @androidx.annotation.Keep class * {*;}
 
@@ -362,7 +568,25 @@
     @androidx.annotation.Keep <init>(...);
 }
 
-# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\fb5516cc460103a833816a1c73d505b6\rules\lib\META-INF\proguard\androidx-annotations.pro
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\b5440b9c2cc0902ba0381ce03994768b\rules\lib\META-INF\proguard\androidx-annotations.pro
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\proguard.txt
+# Keep class members used for serialization
+# https://www.guardsquare.com/en/products/proguard/manual/examples#serializable
+-keepclassmembers class org.threeten.bp.** implements java.io.Serializable {
+  private static final java.io.ObjectStreamField[] serialPersistentFields;
+  private void writeObject(java.io.ObjectOutputStream);
+  private void readObject(java.io.ObjectInputStream);
+  java.lang.Object writeReplace();
+  java.lang.Object readResolve();
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\26a7d339741ba51366cf8531680fd3fe\jetified-threetenabp-1.2.3\proguard.txt
+# The proguard configuration file for the following section is C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6b30fd67c0af036d312d82b6cea55800\rules\lib\META-INF\proguard\org.threeten.bp.pro
+-keepclassmembers class org.threeten.bp.Ser {
+  <init>();
+}
+
+# End of content from C:\Users\Taskology\.gradle\caches\transforms-2\files-2.1\6b30fd67c0af036d312d82b6cea55800\rules\lib\META-INF\proguard\org.threeten.bp.pro
 # The proguard configuration file for the following section is <unknown>
 -ignorewarnings
 # End of content from <unknown>

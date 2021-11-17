@@ -1,5 +1,5 @@
+import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
@@ -9,7 +9,6 @@ import 'package:nakli_beta_service_provider/pages/Notifications.dart';
 import 'package:nakli_beta_service_provider/pages/Settings.dart';
 import 'package:nakli_beta_service_provider/rest/response/Data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
 import 'Home.dart';
 import 'Payments.dart';
 
@@ -28,6 +27,8 @@ class DashboardState extends State<Dashboard> {
   int _selectedIndex = 0;
   String _title = "Home";
   bool activeUser = false;
+  bool isFistimeLoad = true;
+  // bool activeUser = false;
   final List pagesList = [
     Home(),
     MyJobs(),
@@ -38,7 +39,17 @@ class DashboardState extends State<Dashboard> {
 
   @override
   void initState() {
-    getData();
+    if(isFistimeLoad){
+      getData();
+      isFistimeLoad = false;
+      Timer.periodic(Duration(seconds: 10), (Timer timer) {
+        getData();
+      });
+    }else{
+      Timer.periodic(Duration(seconds: 10), (Timer timer) {
+        getData();
+      });
+    }
     super.initState();
   }
 

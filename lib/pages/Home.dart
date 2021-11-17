@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
@@ -31,6 +32,7 @@ class HomeState extends State<Home> {
   late String message = '';
   late Data userData;
   bool isLoading = true;
+  bool isFistimeLoad = true;
   @override
   void initState() {
     getUserData();
@@ -45,13 +47,21 @@ class HomeState extends State<Home> {
             ? Center(
                 child: CircularProgressIndicator(),
               )
-            : (upcomingJobList.length == 0 &&
+            : userData.status != 1 ?Container(
+          padding: EdgeInsets.fromLTRB(40,0,40,0),
+          child: const Center(
+              child: Text('Welcome Naklibeta Service Partners. Please Submit Your KYC to Activate your Profile.', style: TextStyle(
+                fontStyle:FontStyle.italic,
+
+              ),)
+          ),
+        ):(upcomingJobList.length == 0 &&
                     jobList.length == 0 &&
                     todayJobList.length == 0)
                 ? Container(
           padding: EdgeInsets.fromLTRB(40,0,40,0),
           child: const Center(
-                   child: Text('Welcome Naklibeta Service Partners. Please Submit Your KYC to Activate your Profile.', style: TextStyle(
+                   child: Text('Welcome Naklibeta Partner. Kindly wait for new job.', style: TextStyle(
                      fontStyle:FontStyle.italic,
 
                    ),)
@@ -201,11 +211,24 @@ class HomeState extends State<Home> {
         message = '';
         isLoading = true;
       });
-      getData();
+      if(isFistimeLoad){
+        getData();
+        isFistimeLoad = false;
+        Timer.periodic(Duration(seconds: 10), (Timer timer) {
+          getData();
+        });
+      }else{
+        Timer.periodic(Duration(seconds: 10), (Timer timer) {
+          getData();
+        });
+      }
     }
   }
 
   void getData() {
+    jobList = [];
+    todayJobList = [];
+    upcomingJobList = [];
     if (userData != null && userData.providerId.isNotEmpty) {
       JobRequest request = new JobRequest(
           orderModel: new OrderModel(providerId: userData.providerId));

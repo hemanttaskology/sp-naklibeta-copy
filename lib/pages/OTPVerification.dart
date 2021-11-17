@@ -1,13 +1,17 @@
 import 'dart:async';
 import 'dart:convert';
 
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+import 'package:nakli_beta_service_provider/Controllers/SplashController.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as Constants;
+import 'package:nakli_beta_service_provider/common/Globals.dart';
 import 'package:nakli_beta_service_provider/common/ScreenArguments.dart';
 import 'package:nakli_beta_service_provider/common/Utility.dart' as Utility;
 import 'package:nakli_beta_service_provider/pages/Registration.dart';
@@ -30,13 +34,15 @@ class OTPVerification extends StatefulWidget {
 class _OTPVerificationState extends State<OTPVerification> {
   TextEditingController textEditingController = TextEditingController();
   static int otpLength = 4;
+ SplashController splashController = Get.find();
   // ignore: close_sinks
   StreamController<ErrorAnimationType>? errorController;
-
+  String token = "";
   bool hasError = false;
   String currentText = "";
   final formKey = GlobalKey<FormState>();
   late ScreenArguments args;
+
   @override
   void initState() {
     errorController = StreamController<ErrorAnimationType>();
@@ -148,9 +154,7 @@ class _OTPVerificationState extends State<OTPVerification> {
                           blurRadius: 10,
                         )
                       ],
-                      onCompleted: (v) {
-                        print("Completed");
-                      },
+                      onCompleted: (v) {},
                       // onTap: () {
                       //   print("Pressed");
                       // },
@@ -161,7 +165,6 @@ class _OTPVerificationState extends State<OTPVerification> {
                         });
                       },
                       beforeTextPaste: (text) {
-                        print("Allowing to paste $text");
                         //if you return true then it will show the paste confirmation dialog. Otherwise if false, then nothing will happen.
                         //but you can show anything you want here, like your pop up saying wrong paste format or etc
                         return true;
@@ -311,6 +314,11 @@ class _OTPVerificationState extends State<OTPVerification> {
       if (loginStatus && userVerified) {
         final prefs = await SharedPreferences.getInstance();
         prefs.setBool(Constants.LOGIN, true);
+        bool login = prefs.getBool(Constants.LOGIN)!;
+        if (login) {
+          Globals.providerId = userData.providerId;
+          getToken();
+        }
         Navigator.pushNamedAndRemoveUntil(
           context,
           Dashboard.routeName,
@@ -357,7 +365,6 @@ class _OTPVerificationState extends State<OTPVerification> {
 
           apiManager.verifyOTP(user).then((value) async {
             OTPVerificationResponse otpVerificationResponse = value;
-
             openNextScreen(otpVerificationResponse);
           }).onError((error, stackTrace) {
             print(error);
@@ -392,5 +399,11 @@ class _OTPVerificationState extends State<OTPVerification> {
         duration: Duration(seconds: 2),
       ),
     );
+  }
+
+  getToken() async {
+    token = (await FirebaseMessaging.instance.getToken())!;
+    Globals.token = token;
+    splashController.sendToken();
   }
 }
