@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -26,6 +25,7 @@ import 'SelectCategoryPage.dart';
 
 class Registration extends StatefulWidget {
   static const routeName = '/registration';
+
   @override
   State<StatefulWidget> createState() {
     return RegistrationState();
@@ -37,6 +37,7 @@ class RegistrationState extends State<Registration> {
   String phone = '';
   String email = '';
   String state = "Rajasthan";
+  String stateId = "30";
   final _textName = TextEditingController();
   final _textEmail = TextEditingController();
   final _textPhoneNumber = TextEditingController();
@@ -50,15 +51,20 @@ class RegistrationState extends State<Registration> {
   bool validateAddress = false;
   bool enableDisableEmail = false;
   bool enableDisablePhone = false;
-  String selectedCityValue = '', selectedCategoryValue = '';
+  String selectedCityValue = '',selectedCityId = '', selectedCategoryValue = '';
   final List<SearchData> cityListItems = [];
   final List<SearchCategoryData> serviceListItems = [];
+  late List<ServiceDetails> serviceDetailList = [];
   bool setCity = false, setService = false;
   late ScreenArguments args;
   bool isFromSettings = false;
   late String title = "";
   late ServicesResponse servicesResponse;
   String termsAndConditionUrl = 'https://www.naklibeta.com/terms-and-condition';
+  List<String> finalSelectionList = [];
+  List<CategorySelectionList> selectionList = [];
+  late ServiceDetails serviceDetail;
+  final List<CategorySelectionList> selectedCategoryList = [];
 
   @override
   void initState() {
@@ -304,7 +310,8 @@ class RegistrationState extends State<Registration> {
                                             )))
                                     .then((value) => value != null
                                         ? (setState(() {
-                                            selectedCityValue = value as String;
+                                            selectedCityValue = value.name;
+                                            selectedCityId = value.id.toString();
                                           }))
                                         : null);
                               },
@@ -357,12 +364,18 @@ class RegistrationState extends State<Registration> {
                                             new SearchCategoryPage(
                                               title: 'Select Category',
                                               dataList: serviceListItems,
-                                            )
-                                        ))
+                                            )))
                                     .then((value) => value != null
                                         ? (setState(() {
+                                            selectionList = [];
+                                            finalSelectionList = [];
+                                            selectionList = value;
+                                            selectionList.forEach((element) {
+                                              finalSelectionList
+                                                  .add(element.name);
+                                            });
                                             selectedCategoryValue =
-                                                value as String;
+                                                finalSelectionList.join(",");
                                           }))
                                         : null);
                               },
@@ -395,8 +408,9 @@ class RegistrationState extends State<Registration> {
                         decoration: InputDecoration(
                           labelText: 'Current Address',
                           hintText: 'Enter Your Current Address ',
-                          errorText:
-                              validateAddress ? 'Current Address is missing' : null,
+                          errorText: validateAddress
+                              ? 'Current Address is missing'
+                              : null,
                           labelStyle: TextStyle(
                               color: Theme.of(context).primaryColor,
                               fontWeight: FontWeight.bold,
@@ -484,17 +498,17 @@ class RegistrationState extends State<Registration> {
                               List<String> name =
                                   selectedCategoryValue.split(",");
 
-                              name.forEach((element) {
-                                SearchCategoryData data =
-                                    serviceListItems.firstWhere((service) =>
-                                        service.name.compareTo(element) == 0);
-                                if (data != null) {
-                                  Category category = new Category(
-                                      id: data.id, name: data.name);
-                                  categoryList.add(category);
-                                }
+                              selectionList.forEach((element) {
+                                // SearchCategoryData data =
+                                //     serviceListItems.firstWhere((service) =>
+                                //         service.name.compareTo(element) == 0);
+                                // if (data != null) {
+                                Category category = new Category(
+                                    id: element.subCategoryId,
+                                    name: element.name);
+                                categoryList.add(category);
+                                // }
                               });
-
                               if (isFromSettings) {
                                 UpdatePersonalDetailsModel user =
                                     new UpdatePersonalDetailsModel(
@@ -505,8 +519,11 @@ class RegistrationState extends State<Registration> {
                                             _textPhoneNumber.text.toString(),
                                         address: _textAddress.text.toString(),
                                         city: selectedCityValue.toString(),
+                                        cityId: selectedCityId.toString(),
                                         state: _textState.text.toString(),
-                                        serviceCategory: categoryList);
+                                        stateId: stateId,
+                                        serviceCategory: categoryList
+                                    );
                                 updatePersonalDetails(user);
                               } else {
                                 RegistrationModel user = new RegistrationModel(
@@ -516,7 +533,9 @@ class RegistrationState extends State<Registration> {
                                     mobile: _textPhoneNumber.text.toString(),
                                     address: _textAddress.text.toString(),
                                     city: selectedCityValue.toString(),
+                                    cityId: selectedCityId.toString(),
                                     state: _textState.text.toString(),
+                                    stateId: stateId,
                                     serviceCategory: categoryList);
                                 registerUser(user);
                               }
@@ -551,7 +570,6 @@ class RegistrationState extends State<Registration> {
           RegistrationResponse registrationResponse = value;
           openHomeScreen(registrationResponse);
         }).onError((error, stackTrace) {
-          print(error);
           Navigator.pop(context);
           snackBar(error.toString(), Colors.red);
         });
@@ -770,22 +788,36 @@ class RegistrationState extends State<Registration> {
   void setServiceItems() {
     if (servicesResponse.data != null)
       for (var i = 0; i < servicesResponse.data.length; i++) {
+        serviceDetailList = [];
         bool selected = false;
-        userData.serviceCategory.forEach((element) {
-          if (element.name.compareTo(servicesResponse.data[i].name) == 0) {
+        bool headerSelected = false;
+        int servicelength = servicesResponse.data[i].serviceDetails.length;
+        servicesResponse.data[i].serviceDetails.forEach((detail) {
+          try{
+            var abc = userData.serviceCategory.firstWhere((element) => element.name==detail.name);
             selected = true;
+            CategorySelectionList categorySelectionList = new CategorySelectionList(name: detail.name, id: servicesResponse.data[i].subCateId, subCategoryId: detail.id);
+            selectedCategoryList.add(categorySelectionList);
+          }catch(e){
+            selected = false;
           }
+          serviceDetail = new ServiceDetails(
+              id: detail.id, name: detail.name, selected: selected);
+          serviceDetailList.add(serviceDetail);
         });
-        // if (selectedCategoryValue.compareTo(servicesResponse.data[i].name) ==
-        //     0) {
-        //   selected = true;
-        // }
+        int detailLength = serviceDetailList
+            .where((element) => element.selected == true)
+            .length;
+        if (servicelength == detailLength) {
+          headerSelected = true;
+        }
+        SearchCategoryPageState.selectedCategoryList = selectedCategoryList;
         SearchCategoryData searchData = new SearchCategoryData(
-            servicesResponse.data[i].id,
-            servicesResponse.data[i].subcategoryName,
-            servicesResponse.data[i].name,
-
-            selected);
+            servicesResponse.data[i].subCateId,
+            servicesResponse.data[i].subCateName,
+            serviceDetailList,
+            headerSelected,
+            detailLength);
         serviceListItems.add(searchData);
       }
     setState(() {

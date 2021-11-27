@@ -50,6 +50,8 @@ dependencies:
   flutter_local_notifications: ^8.0.0
   get: ^4.3.8
   dio: ^4.0.0
+  upgrader: ^3.9.0
+  font_awesome_flutter: ^9.2.0
 
 dev_dependencies:
   flutter_test:

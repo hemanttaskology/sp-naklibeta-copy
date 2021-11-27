@@ -46,10 +46,10 @@ import 'response/ServicesResponse.dart';
 
 class APIManager {
   //dev url
-  // static const String BASE_URL = 'https://jobbanko.com/api/api/';
+  static const String BASE_URL = 'https://jobbanko.com/api/api/';
 
   //live url
-   static const String BASE_URL = 'https://naklibeta.com/api/api/';
+  //  static const String BASE_URL = 'https://naklibeta.com/api/api/';
 
   static const String LOGIN = BASE_URL + 'serviceprovider/first';
   static const String LOGOUT = BASE_URL + 'serviceprovider/logout';
@@ -67,7 +67,8 @@ class APIManager {
   static const String VERIFY_OTP = BASE_URL + 'serviceprovider/second';
   static const String REGISTER = BASE_URL + 'serviceprovider/third';
   static const String UPDATE_PROFILE = BASE_URL + 'serviceprovider/profile';
-  static const String SERVICES = BASE_URL + 'service/findall';
+  // static const String SERVICES = BASE_URL + 'service/findall';
+  static const String SERVICES = BASE_URL + 'service/getService/0';
   static const String CITIES = BASE_URL + 'list/findCityByState/30';
   static const String QUALIFICATION = BASE_URL + 'list/qualification';
   static const String JOBS = BASE_URL + 'jobs/getJobs';

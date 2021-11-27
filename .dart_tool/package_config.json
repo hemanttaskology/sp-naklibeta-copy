@@ -152,6 +152,18 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "device_info",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/device_info-2.0.3",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "device_info_platform_interface",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/device_info_platform_interface-2.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "dio",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/dio-4.0.1",
       "packageUri": "lib/",
@@ -304,6 +316,12 @@
     {
       "name": "fluttertoast",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.8",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "font_awesome_flutter",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/font_awesome_flutter-9.2.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -716,6 +734,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "upgrader",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/upgrader-3.9.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "url_launcher",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/url_launcher-6.0.12",
       "packageUri": "lib/",
@@ -760,6 +784,12 @@
     {
       "name": "vector_math",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/vector_math-2.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "version",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/version-2.0.0",
       "packageUri": "lib/",
       "languageVersion": "2.12"
     },
@@ -872,7 +902,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-11-15T08:25:19.671499Z",
+  "generated": "2021-11-24T12:24:46.753013Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }

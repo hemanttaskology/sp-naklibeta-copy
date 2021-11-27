@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_form_builder/localization/form_builder_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:get/get.dart';
+import 'package:nakli_beta_service_provider/Controllers/MyJobCountController.dart';
+import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
 import 'package:nakli_beta_service_provider/pages/Dashboard.dart';
 import 'package:nakli_beta_service_provider/pages/HelpAndSupport.dart';
 import 'package:nakli_beta_service_provider/pages/Home.dart';
@@ -107,9 +110,10 @@ Future<void> main() async {
   );
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-
-  runApp(
-      MaterialApp(
+  NotificationController notificationController =
+      Get.put(NotificationController());
+  MyJobCountController jobCountController = Get.put(MyJobCountController());
+  runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,
     theme: AppTheme.lightTheme,
     localizationsDelegates: [

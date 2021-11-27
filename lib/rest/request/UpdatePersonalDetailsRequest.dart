@@ -26,7 +26,9 @@ class UpdatePersonalDetailsModel {
   late String emailId;
   late String mobile;
   late String city;
+  late String cityId;
   late String state;
+  late String stateId;
   late String address;
   late List<Category> serviceCategory = [];
 
@@ -37,7 +39,9 @@ class UpdatePersonalDetailsModel {
       required this.emailId,
       required this.mobile,
       required this.city,
+      required this.cityId,
       required this.state,
+      required this.stateId,
       required this.address,
       required this.serviceCategory});
 
@@ -47,7 +51,9 @@ class UpdatePersonalDetailsModel {
     emailId = json['emailId'];
     mobile = json['mobile'];
     city = json['city'];
+    cityId = json['cityId'];
     state = json['state'];
+    stateId = json['stateId'];
     address = json['address'];
     if (json['serviceCategory'] != null) {
       serviceCategory = <Category>[];
@@ -64,7 +70,9 @@ class UpdatePersonalDetailsModel {
     data['emailId'] = this.emailId;
     data['mobile'] = this.mobile;
     data['city'] = this.city;
+    data['cityId'] = this.cityId;
     data['state'] = this.state;
+    data['stateId'] = this.stateId;
     data['address'] = this.address;
     data['serviceCategory'] =
         this.serviceCategory.map((v) => v.toJson()).toList();

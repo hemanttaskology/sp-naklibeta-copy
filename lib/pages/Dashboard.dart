@@ -2,6 +2,10 @@ import 'dart:async';
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'package:get/get.dart';
+import 'package:nakli_beta_service_provider/Controllers/BottomNavigationController.dart';
+import 'package:nakli_beta_service_provider/Controllers/MyJobCountController.dart';
+import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
 import 'package:nakli_beta_service_provider/pages/MyJobs.dart';
@@ -36,7 +40,10 @@ class DashboardState extends State<Dashboard> {
     Notifications(),
     Settings(),
   ];
-
+  NotificationController notificationController = Get.find();
+  MyJobCountController myJobCountController = Get.find();
+  BottomNavigationController landingPageController =
+  Get.put(BottomNavigationController(), permanent: false);
   @override
   void initState() {
     if(isFistimeLoad){
@@ -100,13 +107,39 @@ class DashboardState extends State<Dashboard> {
       bottomNavigationBar: BottomNavigationBar(
         // showSelectedLabels: false,
         // showUnselectedLabels: false,
-        items: const <BottomNavigationBarItem>[
+        items: <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Homes',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle),
+            icon: new Stack(
+              children: <Widget>[
+                new Icon(Icons.account_circle),
+                Obx(()=> Positioned(
+                  right: 0,
+                  child: myJobCountController.myJobCount.value>0?Container(
+                    padding: EdgeInsets.all(1),
+                    decoration: new BoxDecoration(
+                      color: Colors.red[800],
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    constraints: BoxConstraints(
+                      minWidth: 14,
+                      minHeight: 14,
+                    ),
+                    child: Text(
+                      myJobCountController.myJobCount.value.toString(),
+                      style: new TextStyle(
+                        color: Colors.white,
+                        fontSize: 11,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ):Container(),
+                ))
+              ],
+            ),
             label: 'My Jobs',
           ),
           BottomNavigationBarItem(
@@ -114,16 +147,41 @@ class DashboardState extends State<Dashboard> {
             label: 'Payments',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
+            icon: new Stack(
+              children: <Widget>[
+                new Icon(Icons.notifications),
+                Obx(()=> Positioned(
+                  right: 0,
+                  child: notificationController.notifiCount.value>0?Container(
+                    padding: EdgeInsets.all(1),
+                    decoration: new BoxDecoration(
+                      color: Colors.red[800],
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                    constraints: BoxConstraints(
+                      minWidth: 14,
+                      minHeight: 14,
+                    ),
+                    child: Text(
+                      notificationController.notifiCount.value.toString(),
+                      style: new TextStyle(
+                        color: Colors.white,
+                        fontSize: 11,
+                      ),
+                      textAlign: TextAlign.center,
+                    ),
+                  ):Container(),
+                ))
+              ],
+            ),
             label: 'Notification',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
             label: 'Settings',
           ),
-
-
         ],
+        type: BottomNavigationBarType.fixed,
         currentIndex: _selectedIndex,
         selectedItemColor: Theme.of(context).primaryColor,
         unselectedItemColor: Theme.of(context).disabledColor,
@@ -156,6 +214,7 @@ class DashboardState extends State<Dashboard> {
         case 3:
           {
             _title = 'Notification';
+
           }
           break;
         case 4:

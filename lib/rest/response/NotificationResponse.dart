@@ -24,20 +24,26 @@ class NotificationResponse {
 }
 
 class NotificationData {
+  late int id;
   late String title;
-  late String orderId;
+  late String pageId;
+  late String url;
   late String date;
+  late int status;
 
   NotificationData.fromJson(Map<String, dynamic> json) {
+    id = json['id'];
     title = json['title'];
-    orderId = json['orderId'];
+    pageId = json['pageId'];
+    url = json['url'];
     date = json['date'];
+    status = json['status'];
   }
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['title'] = this.title;
-    data['orderId'] = this.orderId;
+    data['pageId'] = this.pageId;
     data['date'] = this.date;
     return data;
   }

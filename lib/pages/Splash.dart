@@ -68,6 +68,7 @@ class _SplashState extends State<Splash> {
     });
 
     FirebaseMessaging.onMessageOpenedApp.listen((RemoteMessage message) {
+      Get.to(Splash());
     });
     isUserLoggedIn();
     Timer(

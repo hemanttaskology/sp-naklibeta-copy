@@ -3,7 +3,7 @@ import 'package:nakli_beta_service_provider/common/Globals.dart';
 import 'package:nakli_beta_service_provider/rest/APIManager.dart';
 
 class SplashService {
-  static String updateTokenUrl = "update-device-token";
+  static String updateTokenUrl = "serviceprovider/update-device-token";
 
   static updateToken() async {
     var dio = Dio();

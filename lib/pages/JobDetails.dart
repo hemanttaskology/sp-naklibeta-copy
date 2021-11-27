@@ -10,6 +10,7 @@ import 'package:nakli_beta_service_provider/common/JobStatusType.dart';
 import 'package:nakli_beta_service_provider/common/JobType.dart';
 import 'package:nakli_beta_service_provider/common/ScreenArguments.dart';
 import 'package:nakli_beta_service_provider/common/Utility.dart' as Utility;
+import 'package:nakli_beta_service_provider/pages/Dashboard.dart';
 import 'package:nakli_beta_service_provider/pages/Quotation.dart';
 import 'package:nakli_beta_service_provider/rest/APIManager.dart';
 import 'package:nakli_beta_service_provider/rest/request/AcceptJobRequest.dart';
@@ -20,6 +21,7 @@ import 'package:nakli_beta_service_provider/rest/response/JobAcceptResponse.dart
 import 'package:nakli_beta_service_provider/rest/response/JobDetailsResponse.dart';
 import 'package:nakli_beta_service_provider/rest/response/NextJobResponse.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class JobDetails extends StatefulWidget {
   static const routeName = '/jobDetails';
@@ -72,6 +74,7 @@ class JobDetailsState extends State<JobDetails> {
             },
           ),
         ),
+        // bottomNavigationBar: Dashboard(),
         body: isLoading
             ? Center(
                 child: CircularProgressIndicator(),
@@ -106,7 +109,7 @@ class JobDetailsState extends State<JobDetails> {
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                   color: Colors.grey.shade600,
-                                  fontSize: 14,
+                                  fontSize: 16,
                                 ),
                               ),
                             ),
@@ -118,7 +121,7 @@ class JobDetailsState extends State<JobDetails> {
                                 overflow: TextOverflow.ellipsis,
                                 style: TextStyle(
                                     color: Colors.black,
-                                    fontSize: 14,
+                                    fontSize: 16,
                                     fontWeight: FontWeight.bold),
                               ),
                             ),
@@ -130,18 +133,20 @@ class JobDetailsState extends State<JobDetails> {
                                 : SizedBox.shrink(),
                             getQuotation(),
                             getButton(),
-
-                            (jobDetailData.status == 1) ?
-                            Center(
-                                child: Text('Before sending a quotation',style: TextStyle(
-                                  fontWeight: FontWeight.bold
-                                ),))
-                                :Center(child: Text('')),
-                            (jobDetailData.status == 1) ?
-                            Center(
-                                child: Text('Kindly Call the customer first to understand the complete requirement'
-                                    ' or call & schedule a meeting to understand the complete requirement of the customer.'))
-                                :Center(child: Text('')),
+                            (jobDetailData.status == 1)
+                                ? Center(
+                                    child: Text(
+                                    'Before sending a quotation',
+                                    style:
+                                        TextStyle(fontWeight: FontWeight.bold),
+                                  ))
+                                : Center(child: Text('')),
+                            (jobDetailData.status == 1)
+                                ? Center(
+                                    child: Text(
+                                        'Kindly Call the customer first to understand the complete requirement'
+                                        ' or call & schedule a meeting to understand the complete requirement of the customer.'))
+                                : Center(child: Text('')),
                           ],
                         )),
                   )
@@ -179,11 +184,12 @@ class JobDetailsState extends State<JobDetails> {
           APIManager apiManager = new APIManager();
           apiManager.jobDetail(request).then((value) async {
             JobDetailsResponse jobDetailsResponse = value;
-
             setState(() {
               isLoading = false;
               if (jobDetailsResponse.data != null) {
                 jobDetailData = jobDetailsResponse.data;
+                name = jobDetailData.name;
+                phone = jobDetailData.phone;
               }
             });
           }).onError((error, stackTrace) {
@@ -499,10 +505,15 @@ class JobDetailsState extends State<JobDetails> {
                   orderId: widget.orderId,
                   detail: jobDetailData.detail,
                   preferredDate: jobDetailData.date,
-                  taxStatus:jobDetailData.taxStatus,
+                  taxStatus: jobDetailData.taxStatus,
                   taxPercentage: jobDetailData.taxPercentage,
                   providerPercentage: jobDetailData.providerPercentage,
                   updateQuotation: update,
+                  amount: jobDetailData.quotation.amount,
+                  taxable_amount: jobDetailData.quotation.taxable_amount,
+                  taxPercentage2: jobDetailData.taxPercentage2,
+                  taxPercentage3: jobDetailData.taxPercentage3,
+                  text: jobDetailData.quotation.details,
                 )))
         .then((val) => val ? Navigator.pop(context, true) : refreshUI());
   }
@@ -528,7 +539,7 @@ class JobDetailsState extends State<JobDetails> {
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 14,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
             ),
@@ -539,7 +550,7 @@ class JobDetailsState extends State<JobDetails> {
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                   color: Colors.grey.shade600,
-                  fontSize: 14,
+                  fontSize: 16,
                 ),
               ),
             ),
@@ -554,18 +565,24 @@ class JobDetailsState extends State<JobDetails> {
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
                     color: Colors.black,
-                    fontSize: 14,
+                    fontSize: 16,
                     fontWeight: FontWeight.bold),
               ),
             ),
             Padding(
               padding: EdgeInsets.symmetric(vertical: 0, horizontal: 0),
-              child: Text(
-                phone,
-                overflow: TextOverflow.ellipsis,
-                style: TextStyle(
-                  color: Colors.grey.shade600,
-                  fontSize: 14,
+              child: InkWell(
+                onTap: () {
+                  launch("tel://" + phone);
+                },
+                child: Text(
+                  phone,
+                  overflow: TextOverflow.ellipsis,
+                  style: TextStyle(
+                      color: Colors.deepPurple,
+                      fontSize: 16,
+                      fontWeight: FontWeight.bold,
+                      decoration: TextDecoration.underline),
                 ),
               ),
             ),
@@ -664,7 +681,7 @@ class JobDetailsState extends State<JobDetails> {
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                   color: Colors.black,
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: FontWeight.bold),
             ),
           ),
@@ -676,7 +693,7 @@ class JobDetailsState extends State<JobDetails> {
               overflow: TextOverflow.ellipsis,
               style: TextStyle(
                 color: Colors.grey.shade600,
-                fontSize: 14,
+                fontSize: 16,
               ),
             ),
           ),

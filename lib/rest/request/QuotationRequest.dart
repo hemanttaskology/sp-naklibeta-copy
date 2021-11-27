@@ -24,9 +24,11 @@ class Quotations {
   late String amount;
   late String gst;
   late String sgst;
+  late String igst;
+  late bool taxType;
 
   Quotations(
-      {required this.orderId, required this.quotation, required this.amount, required this.gst, required this.sgst});
+      {required this.orderId, required this.quotation, required this.amount, required this.gst, required this.sgst,required this.igst,required this.taxType});
 
   Quotations.fromJson(Map<String, dynamic> json) {
     orderId = json['orderId'];
@@ -34,6 +36,8 @@ class Quotations {
     amount = json['amount'];
     gst = json['gst'];
     sgst=json['sgst'];
+    igst=json['igst'];
+    taxType=json['taxType'];
   }
 
   Map<String, dynamic> toJson() {
@@ -43,6 +47,8 @@ class Quotations {
     data['amount'] = this.amount;
     data['gst']=this.gst;
     data['sgst']=this.sgst;
+    data['igst']=this.igst;
+    data['taxType']=this.taxType;
     return data;
   }
 }

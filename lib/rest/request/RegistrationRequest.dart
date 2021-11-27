@@ -27,7 +27,9 @@ class RegistrationModel {
   late String mobile;
   late String address;
   late String city;
+  late String cityId;
   late String state;
+  late String stateId;
   late List<Category> serviceCategory = [];
 
   RegistrationModel(
@@ -37,7 +39,9 @@ class RegistrationModel {
       required this.mobile,
       required this.address,
       required this.city,
+      required this.cityId,
       required this.state,
+      required this.stateId,
       required this.serviceCategory});
 
   RegistrationModel.fromJson(Map<String, dynamic> json) {
@@ -47,7 +51,9 @@ class RegistrationModel {
     mobile = json['mobile'];
     address = json['address'];
     city = json['city'];
+    cityId = json['cityId'];
     state = json['state'];
+    stateId = json['stateId'];
     if (json['serviceCategory'] != null) {
       serviceCategory = <Category>[];
       json['serviceCategory'].forEach((v) {
@@ -64,7 +70,9 @@ class RegistrationModel {
     data['mobile'] = this.mobile;
     data['address'] = this.address;
     data['city'] = this.city;
+    data['cityId'] = this.cityId;
     data['state'] = this.state;
+    data['stateId'] = this.stateId;
     data['serviceCategory'] =
         this.serviceCategory.map((v) => v.toJson()).toList();
     return data;

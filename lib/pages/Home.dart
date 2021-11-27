@@ -2,6 +2,8 @@ import 'dart:async';
 import 'dart:convert';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
 import 'package:nakli_beta_service_provider/common/JobType.dart';
@@ -12,7 +14,7 @@ import 'package:nakli_beta_service_provider/rest/request/JobRequest.dart';
 import 'package:nakli_beta_service_provider/rest/response/Data.dart';
 import 'package:nakli_beta_service_provider/rest/response/JobResponse.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
+import 'package:upgrader/upgrader.dart';
 
 import 'JobDetails.dart';
 
@@ -33,6 +35,7 @@ class HomeState extends State<Home> {
   late Data userData;
   bool isLoading = true;
   bool isFistimeLoad = true;
+  late Timer timer;
   @override
   void initState() {
     getUserData();
@@ -40,10 +43,16 @@ class HomeState extends State<Home> {
   }
 
   @override
+  void dispose() {
+    timer.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Theme.of(context).backgroundColor,
-        body: (isLoading
+        body: UpgradeAlert(child:(isLoading
             ? Center(
                 child: CircularProgressIndicator(),
               )
@@ -196,7 +205,7 @@ class HomeState extends State<Home> {
                             : SizedBox.shrink()),
                       ],
                     ),
-                  )));
+                  ))));
   }
 
   Future<void> getUserData() async {
@@ -214,11 +223,11 @@ class HomeState extends State<Home> {
       if(isFistimeLoad){
         getData();
         isFistimeLoad = false;
-        Timer.periodic(Duration(seconds: 10), (Timer timer) {
+        timer = new Timer.periodic(Duration(seconds: 10), (Timer timer) {
           getData();
         });
       }else{
-        Timer.periodic(Duration(seconds: 10), (Timer timer) {
+        timer = new Timer.periodic(Duration(seconds: 10), (Timer timer) {
           getData();
         });
       }
@@ -226,6 +235,7 @@ class HomeState extends State<Home> {
   }
 
   void getData() {
+    print("timmer start");
     jobList = [];
     todayJobList = [];
     upcomingJobList = [];

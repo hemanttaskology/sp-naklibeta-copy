@@ -43,7 +43,7 @@ class SearchSelectPageState extends State<SearchSelectPage> {
                     fontWeight: FontWeight.bold)),
             onPressed: () {
               if (searchData != null && isRadioSelected != -1)
-                Navigator.of(context).pop(searchData.name);
+                Navigator.of(context).pop(searchData);
             },
           ),
         ],

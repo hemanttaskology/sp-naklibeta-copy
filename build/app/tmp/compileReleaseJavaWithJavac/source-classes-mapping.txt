@@ -1,4 +1,0 @@
-io/flutter/plugins/GeneratedPluginRegistrant.java
- io.flutter.plugins.GeneratedPluginRegistrant
-com/service/naklibeta/nakli_beta_service_provider/BuildConfig.java
- com.service.naklibeta.nakli_beta_service_provider.BuildConfig
