@@ -98,9 +98,9 @@ class APIManager {
         body: json.encode(request.toJson()),
       );
 
-      print('URL =>> ' + NOTIFICATION);
-      print('REQUEST =>> ${json.encode(request.toJson()).toString()}');
-      print("RESPONSE =>> ${response.body}");
+      // print('URL =>> ' + NOTIFICATION);
+      // print('REQUEST =>> ${json.encode(request.toJson()).toString()}');
+      // print("RESPONSE =>> ${response.body}");
 
       if (response.statusCode == 200) {
         NotificationResponse responseData =
@@ -432,9 +432,9 @@ class APIManager {
         },
         body: json.encode(loginRequest.toJson()),
       );
-      print('URL =>> ' + LOGIN);
-      print("RESPONSE =>> ${response.body}");
-      print('REQUEST =>> ${json.encode(loginRequest.toJson()).toString()}');
+      // print('URL =>> ' + LOGIN);
+      // print("RESPONSE =>> ${response.body}");
+      // print('REQUEST =>> ${json.encode(loginRequest.toJson()).toString()}');
 
       if (response.statusCode == 200) {
         LoginResponse responseData =

@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
@@ -20,7 +19,7 @@ import 'JobDetails.dart';
 
 class Home extends StatefulWidget {
   static const routeName = 'home';
-
+  late bool permissionGranted;
   @override
   State<StatefulWidget> createState() {
     return HomeState();

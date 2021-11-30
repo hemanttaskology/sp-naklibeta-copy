@@ -14,11 +14,11 @@ import 'package:nakli_beta_service_provider/rest/request/KycRequest.dart';
 import 'package:nakli_beta_service_provider/rest/response/BaseResponse.dart';
 import 'package:nakli_beta_service_provider/rest/response/Data.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:permission_handler/permission_handler.dart';
 
 class UserKyc extends StatefulWidget {
   const UserKyc({Key? key}) : super(key: key);
   static const routeName = '/UserKyc';
-
 
 
   @override
@@ -34,7 +34,7 @@ class UserKycState extends State<UserKyc> {
   final _textBranchName = TextEditingController();
   final _textAccountNumber = TextEditingController();
   final _textReenterAccountNumber = TextEditingController();
-
+  late bool permissionGranted;
   // final _textFirmName = TextEditingController();
   // final _textGSTNumber = TextEditingController();
 
@@ -48,18 +48,20 @@ class UserKycState extends State<UserKyc> {
   // bool validateFirmName = false;
   // bool validateGSTNumber = false;
   late Data userData;
-  final picker = ImagePicker();
-  var _frontImage = null, _backImage= null, _panCardImage= null;
-    // late const _frontImage=null;
+
+  // final picker = ImagePicker();
+  var _frontImage = null, _backImage = null, _panCardImage = null;
+
+  // late const _frontImage=null;
   //these for camera selection
   bool frontImageSelected = false;
   bool backImageSelected = false;
   bool panCardImageSelected = false;
+
   //these for serve image path come or not
   bool isFIFromServ = false;
   bool isBIFromServ = false;
   bool isPCFromServ = false;
-
 
   @override
   void initState() {
@@ -97,22 +99,22 @@ class UserKycState extends State<UserKyc> {
           text: userData.acName,
         );
       });
-      if (userData.aadharCardFront != null&&userData.aadharCardFront != "") {
+      if (userData.aadharCardFront != null && userData.aadharCardFront != "") {
         setState(() {
           isFIFromServ = true;
-         // _frontImage=File(userData.aadharCardFront);
+          // _frontImage=File(userData.aadharCardFront);
         });
       }
-      if (userData.aadharCardBack != null&&userData.aadharCardBack != "") {
+      if (userData.aadharCardBack != null && userData.aadharCardBack != "") {
         setState(() {
           isBIFromServ = true;
-         // _backImage=File(userData.aadharCardBack);
+          // _backImage=File(userData.aadharCardBack);
         });
       }
-      if (userData.pancard != null&&userData.pancard != "") {
+      if (userData.pancard != null && userData.pancard != "") {
         setState(() {
           isPCFromServ = true;
-        //  _panCardImage=File(userData.pancard);
+          //  _panCardImage=File(userData.pancard);
         });
       }
     }
@@ -337,25 +339,26 @@ class UserKycState extends State<UserKyc> {
                                 onPressed: () {
                                   _showSelectionDialog(1);
                                 },
-                                child: (isFIFromServ==true&&frontImageSelected==false?Image.network(
-                                  userData.aadharCardFront,
-                                  height: 200,
-                                  width: 200,
-                                  fit: BoxFit.cover,
-                                    
-                                )
-                                    :frontImageSelected
-                                        ? Image.file(
-                                            _frontImage,
+                                child: (isFIFromServ == true &&
+                                            frontImageSelected == false
+                                        ? Image.network(
+                                            userData.aadharCardFront,
                                             height: 200,
                                             width: 200,
                                             fit: BoxFit.cover,
                                           )
-                                        : Icon(
-                                            Icons.camera_alt,
-                                            color: Colors.grey,
-                                            size: 120,
-                                          )
+                                        : frontImageSelected == true
+                                            ? Image.file(
+                                                _frontImage,
+                                                height: 200,
+                                                width: 200,
+                                                fit: BoxFit.cover,
+                                              )
+                                            : Icon(
+                                                Icons.camera_alt,
+                                                color: Colors.grey,
+                                                size: 120,
+                                              )
                                     // Image.asset(
                                     //         'images/camera.jpg',
                                     //         height: 200,
@@ -374,23 +377,26 @@ class UserKycState extends State<UserKyc> {
                                 onPressed: () {
                                   _showSelectionDialog(2);
                                 },
-                                child: (isBIFromServ==true&&backImageSelected==false?Image.network(
-                                  userData.aadharCardBack,
-                                  height: 200,
-                                  width: 200,
-                                  fit: BoxFit.cover,
-                                ):backImageSelected
-                                        ? Image.file(
-                                            _backImage,
+                                child: (isBIFromServ == true &&
+                                            backImageSelected == false
+                                        ? Image.network(
+                                            userData.aadharCardBack,
                                             height: 200,
                                             width: 200,
                                             fit: BoxFit.cover,
                                           )
-                                        : Icon(
-                                            Icons.camera_alt,
-                                            color: Colors.grey,
-                                            size: 120,
-                                          )
+                                        : backImageSelected == true
+                                            ? Image.file(
+                                                _backImage,
+                                                height: 200,
+                                                width: 200,
+                                                fit: BoxFit.cover,
+                                              )
+                                            : Icon(
+                                                Icons.camera_alt,
+                                                color: Colors.grey,
+                                                size: 120,
+                                              )
                                     // Image.asset(
                                     //         'images/camera.jpg',
                                     //         height: 200,
@@ -437,24 +443,26 @@ class UserKycState extends State<UserKyc> {
                                 onPressed: () {
                                   _showSelectionDialog(3);
                                 },
-                                child: (isPCFromServ==true&&panCardImageSelected==false?Image.network(
-                                  userData.pancard,
-                                  height: 200,
-                                  width: 200,
-                                  fit: BoxFit.cover,
-
-                                ):panCardImageSelected
-                                        ? Image.file(
-                                            _panCardImage,
+                                child: (isPCFromServ == true &&
+                                            panCardImageSelected == false
+                                        ? Image.network(
+                                            userData.pancard,
                                             height: 200,
                                             width: 200,
                                             fit: BoxFit.cover,
                                           )
-                                        : Icon(
-                                            Icons.camera_alt,
-                                            color: Colors.grey,
-                                            size: 120,
-                                          )
+                                        : panCardImageSelected == true
+                                            ? Image.file(
+                                                _panCardImage,
+                                                height: 200,
+                                                width: 200,
+                                                fit: BoxFit.cover,
+                                              )
+                                            : Icon(
+                                                Icons.camera_alt,
+                                                color: Colors.grey,
+                                                size: 120,
+                                              )
                                     // Image.asset(
                                     //         'images/camera.jpg',
                                     //         height: 200,
@@ -484,17 +492,26 @@ class UserKycState extends State<UserKyc> {
                   child: TextButton(
                     onPressed: () async {
                       if (_textAccountHolderName.text.toString().isNotEmpty &&
-                          _textBankName.text.toString().isNotEmpty &&
-                          _textBankIFSC.text.toString().isNotEmpty &&
-                          _textBranchName.text.toString().isNotEmpty &&
-                          _textAccountNumber.text.toString().isNotEmpty &&
-                          _textReenterAccountNumber.text
-                              .toString()
-                              .isNotEmpty &&
-                          frontImageSelected &&
-                          backImageSelected &&
-                          panCardImageSelected||frontImageSelected==false&&isFIFromServ==true&&backImageSelected==false&&isBIFromServ==true&&panCardImageSelected==false&&isPCFromServ==true||
-                          frontImageSelected==true&&isFIFromServ==true||backImageSelected==true&&isBIFromServ==true||panCardImageSelected==true&&isPCFromServ==true) {
+                              _textBankName.text.toString().isNotEmpty &&
+                              _textBankIFSC.text.toString().isNotEmpty &&
+                              _textBranchName.text.toString().isNotEmpty &&
+                              _textAccountNumber.text.toString().isNotEmpty &&
+                              _textReenterAccountNumber.text
+                                  .toString()
+                                  .isNotEmpty &&
+                              frontImageSelected &&
+                              backImageSelected &&
+                              panCardImageSelected ||
+                          frontImageSelected == false &&
+                              isFIFromServ == true &&
+                              backImageSelected == false &&
+                              isBIFromServ == true &&
+                              panCardImageSelected == false &&
+                              isPCFromServ == true ||
+                          frontImageSelected == true && isFIFromServ == true ||
+                          backImageSelected == true && isBIFromServ == true ||
+                          panCardImageSelected == true &&
+                              isPCFromServ == true) {
                         String accountNumber =
                             _textAccountNumber.text.toString();
                         String reAccountNumber =
@@ -541,12 +558,13 @@ class UserKycState extends State<UserKyc> {
                                 ? true
                                 : false;
 
-                        if(!(isFIFromServ==true&&isBIFromServ==true))
-                        if (!(frontImageSelected && backImageSelected)) {
+                        if (!(isFIFromServ == true &&
+                            isBIFromServ ==
+                                true)) if (!(frontImageSelected &&
+                            backImageSelected)) {
                           snackBar("Aadhaar Card photo missing", Colors.red);
                         }
-                        if(!isPCFromServ==true)
-                        if (!panCardImageSelected) {
+                        if (!isPCFromServ == true) if (!panCardImageSelected) {
                           snackBar("Pan Card photo missing", Colors.red);
                         }
                       });
@@ -569,28 +587,79 @@ class UserKycState extends State<UserKyc> {
   }
 
   Future selectOrTakePhoto(ImageSource imageSource, int type) async {
-    final pickedFile =
-        await picker.pickImage(source: imageSource, imageQuality: 60);
-
-    setState(() {
-      if (pickedFile != null) {
-        String path = pickedFile.path;
-        print("asha === $path");
-
-        if (type == 1) {
-          frontImageSelected = true;
-          _frontImage = File(pickedFile.path);
-
-        } else if (type == 2) {
-          backImageSelected = true;
-          _backImage = File(pickedFile.path);
-        } else {
-          panCardImageSelected = true;
-          _panCardImage = File(pickedFile.path);
+    var status = await Permission.camera.status;
+    if (status.isDenied) {
+      permissionGranted = false;
+    }else{
+      permissionGranted = true;
+    }
+    if(permissionGranted){
+      if (await Permission.storage.request().isGranted) {
+        setState(() {
+          permissionGranted = true;
+        });
+        // final picker = ImagePicker();
+        final pickedFile =
+        await ImagePicker.pickImage(source: imageSource);
+        if (pickedFile != null) {
+          String path = pickedFile.path;
+          if (type == 1) {
+            frontImageSelected = true;
+            _frontImage = File(pickedFile.path);
+          } else if (type == 2) {
+            backImageSelected = true;
+            _backImage = File(pickedFile.path);
+          } else {
+            panCardImageSelected = true;
+            _panCardImage = File(pickedFile.path);
+          }
+        } else
+          print('No photo was selected or taken');
+        setState(() {
+        });
+      } else {
+        if (await Permission.storage.request().isPermanentlyDenied) {
+          await openAppSettings();
+        } else if (await Permission.storage.request().isDenied) {
+          setState(() {
+            permissionGranted = false;
+          });
         }
-      } else
-        print('No photo was selected or taken');
-    });
+      }
+    }else{
+      if (await Permission.storage.request().isGranted) {
+        setState(() {
+          permissionGranted = true;
+        });
+        // final picker = ImagePicker();
+        final pickedFile =
+        await ImagePicker.pickImage(source: imageSource);
+        if (pickedFile != null) {
+          String path = pickedFile.path;
+          if (type == 1) {
+            frontImageSelected = true;
+            _frontImage = File(pickedFile.path);
+          } else if (type == 2) {
+            backImageSelected = true;
+            _backImage = File(pickedFile.path);
+          } else {
+            panCardImageSelected = true;
+            _panCardImage = File(pickedFile.path);
+          }
+        } else
+          print('No photo was selected or taken');
+        setState(() {
+        });
+      } else {
+        if (await Permission.storage.request().isPermanentlyDenied) {
+          await openAppSettings();
+        } else if (await Permission.storage.request().isDenied) {
+          setState(() {
+            permissionGranted = false;
+          });
+        }
+      }
+    }
   }
 
   Future _showSelectionDialog(int type) async {

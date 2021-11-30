@@ -8,11 +8,14 @@ class Data {
   late String mobile;
   late String emailId;
   late String city;
+  late String cityId;
   late String state;
+  late String stateId;
   late String address;
   late List<Category> serviceCategory = [];
   late String token;
   late int status;
+  late var is_active;
   late int loginStatus;
   late int userVerification;
   late String providerId;
@@ -46,7 +49,9 @@ class Data {
     mobile = json['mobile'];
     emailId = json['emailId'];
     city = json['city'];
+    cityId = json['cityId'];
     state = json['state'];
+    stateId = json['stateId'];
     address = json['address'];
     if (json['serviceCategory'] != null) {
       serviceCategory = <Category>[];
@@ -56,6 +61,7 @@ class Data {
     }
     token = json['token'];
     status = json['status'];
+    is_active = json['is_active'] is int ?json['is_active']:int.parse(json['is_active']);
     loginStatus = json['loginStatus'];
     userVerification = json['userVerification'];
     providerId = json['providerId'];
@@ -92,12 +98,15 @@ class Data {
     data['mobile'] = this.mobile;
     data['emailId'] = this.emailId;
     data['city'] = this.city;
+    data['cityId'] = this.cityId;
     data['state'] = this.state;
+    data['stateId'] = this.stateId;
     data['address'] = this.address;
     data['serviceCategory'] =
         this.serviceCategory.map((v) => v.toJson()).toList();
     data['token'] = this.token;
     data['status'] = this.status;
+    data['is_active'] = this.is_active;
     data['loginStatus'] = this.loginStatus;
     data['userVerification'] = this.userVerification;
     data['providerId'] = this.providerId;

@@ -116,12 +116,6 @@
       "languageVersion": "2.12"
     },
     {
-      "name": "cross_file",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/cross_file-0.3.1+5",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
       "name": "crypto",
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1",
       "packageUri": "lib/",
@@ -285,9 +279,9 @@
     },
     {
       "name": "flutter_plugin_android_lifecycle",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.4",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11",
       "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.1"
     },
     {
       "name": "flutter_rating_bar",
@@ -363,21 +357,9 @@
     },
     {
       "name": "image_picker",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+3",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.5+3",
       "packageUri": "lib/",
-      "languageVersion": "2.14"
-    },
-    {
-      "name": "image_picker_for_web",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_for_web-2.1.4",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
-    },
-    {
-      "name": "image_picker_platform_interface",
-      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_platform_interface-2.4.1",
-      "packageUri": "lib/",
-      "languageVersion": "2.12"
+      "languageVersion": "2.0"
     },
     {
       "name": "intl",
@@ -540,6 +522,18 @@
       "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "permission_handler",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "permission_handler_platform_interface",
+      "rootUri": "file:///E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
     },
     {
       "name": "petitparser",
@@ -902,7 +896,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2021-11-24T12:24:46.753013Z",
+  "generated": "2021-11-29T12:12:57.587314Z",
   "generator": "pub",
   "generatorVersion": "2.14.4"
 }

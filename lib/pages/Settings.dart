@@ -368,7 +368,7 @@ class SettingsState extends State<Settings> {
   }
 
   Future selectOrTakePhoto(ImageSource imageSource) async {
-    final pickedFile = await picker.pickImage(
+    final pickedFile = await ImagePicker.pickImage(
       source: imageSource,
       imageQuality: 60,
     );

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">473067545836-ql1a2cm4qdl25nvckpm9rr0juejc1ogs.apps.googleusercontent.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">473067545836</string>
+    <string name="google_api_key" translatable="false">AIzaSyBUOzZ8nVfJZqVvkDtbBsi0NFiLHuJvYpk</string>
+    <string name="google_app_id" translatable="false">1:473067545836:android:c076ae3227aeb2dd6871c9</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBUOzZ8nVfJZqVvkDtbBsi0NFiLHuJvYpk</string>
+    <string name="google_storage_bucket" translatable="false">naklibeta-app.appspot.com</string>
+    <string name="project_id" translatable="false">naklibeta-app</string>
+</resources>

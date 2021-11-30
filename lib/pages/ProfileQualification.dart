@@ -470,7 +470,7 @@ class ProfileQualificationState extends State<ProfileQualification> {
 
   Future selectOrTakePhoto(ImageSource imageSource, int type) async {
     final pickedFile =
-        await picker.pickImage(source: imageSource, imageQuality: 60);
+        await ImagePicker.pickImage(source: imageSource, imageQuality: 60);
 
     setState(() {
       if (pickedFile != null) {

@@ -97,6 +97,7 @@ class RegistrationState extends State<Registration> {
           enableDisableEmail = true;
           enableDisablePhone = true;
           selectedCityValue = userData.city;
+          selectedCityId = userData.cityId;
           selectedCategoryValue = userData.getSelectedCategoryName().join(',');
           _textAddress.value = _textAddress.value.copyWith(
             text: userData.address,
@@ -497,18 +498,22 @@ class RegistrationState extends State<Registration> {
                               List<Category> categoryList = [];
                               List<String> name =
                                   selectedCategoryValue.split(",");
+                              if(selectionList.length>0){
+                                selectionList.forEach((element) {
+                                  // SearchCategoryData data =
+                                  //     serviceListItems.firstWhere((service) =>
+                                  //         service.name.compareTo(element) == 0);
+                                  // if (data != null) {
+                                  Category category = new Category(
+                                      id: element.subCategoryId,
+                                      name: element.name);
+                                  categoryList.add(category);
+                                  // }
+                                });
+                              }else{
+                                categoryList = userData.serviceCategory;
+                              }
 
-                              selectionList.forEach((element) {
-                                // SearchCategoryData data =
-                                //     serviceListItems.firstWhere((service) =>
-                                //         service.name.compareTo(element) == 0);
-                                // if (data != null) {
-                                Category category = new Category(
-                                    id: element.subCategoryId,
-                                    name: element.name);
-                                categoryList.add(category);
-                                // }
-                              });
                               if (isFromSettings) {
                                 UpdatePersonalDetailsModel user =
                                     new UpdatePersonalDetailsModel(

@@ -849,7 +849,6 @@ class QuotationState extends State<Quotation> {
       int amount = int.parse(text);
       tax = (amount * int.parse(_validategst.value.text)) / 100;
       tax1 = (amount * int.parse(_validateSGST.value.text)) / 100;
-      // tax = (amount * widget.taxPercentage) / 100;
       totalAmount = amount + tax + tax1;
       yourEarning = (totalAmount * widget.providerPercentage) / 100;
       partnerShare = (totalAmount * (100 - widget.providerPercentage)) / 100;

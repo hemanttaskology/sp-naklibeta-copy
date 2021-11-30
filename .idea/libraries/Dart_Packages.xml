@@ -135,13 +135,6 @@
             </list>
           </value>
         </entry>
-        <entry key="cross_file">
-          <value>
-            <list>
-              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/cross_file-0.3.1+5/lib" />
-            </list>
-          </value>
-        </entry>
         <entry key="crypto">
           <value>
             <list>
@@ -334,7 +327,7 @@
         <entry key="flutter_plugin_android_lifecycle">
           <value>
             <list>
-              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.4/lib" />
+              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/lib" />
             </list>
           </value>
         </entry>
@@ -425,21 +418,7 @@
         <entry key="image_picker">
           <value>
             <list>
-              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+3/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="image_picker_for_web">
-          <value>
-            <list>
-              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_for_web-2.1.4/lib" />
-            </list>
-          </value>
-        </entry>
-        <entry key="image_picker_platform_interface">
-          <value>
-            <list>
-              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_platform_interface-2.4.1/lib" />
+              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.5+3/lib" />
             </list>
           </value>
         </entry>
@@ -629,6 +608,20 @@
           <value>
             <list>
               <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="permission_handler">
+          <value>
+            <list>
+              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/lib" />
+            </list>
+          </value>
+        </entry>
+        <entry key="permission_handler_platform_interface">
+          <value>
+            <list>
+              <option value="E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/lib" />
             </list>
           </value>
         </entry>
@@ -1067,7 +1060,6 @@
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/clock-1.1.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/convert-3.0.1/lib" />
-      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/cross_file-0.3.1+5/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-3.0.1/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/csslib-0.17.1/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.3/lib" />
@@ -1093,7 +1085,7 @@
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications-8.2.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_local_notifications_platform_interface-4.0.1/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_math_fork-0.3.3+1/lib" />
-      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-2.0.4/lib" />
+      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_plugin_android_lifecycle-1.0.11/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_rating_bar-4.0.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_svg-0.22.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/fluttertoast-8.0.8/lib" />
@@ -1104,9 +1096,7 @@
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/html-0.15.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/http-0.13.4/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/http_parser-4.0.0/lib" />
-      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.8.4+3/lib" />
-      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_for_web-2.1.4/lib" />
-      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker_platform_interface-2.4.1/lib" />
+      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/image_picker-0.6.5+3/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/intl-0.17.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/js-0.6.3/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/json_annotation-4.3.0/lib" />
@@ -1134,6 +1124,8 @@
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_platform_interface-2.0.1/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/path_provider_windows-2.0.3/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/pedantic-1.11.1/lib" />
+      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler-8.3.0/lib" />
+      <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/permission_handler_platform_interface-3.7.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/petitparser-4.4.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/pin_code_fields-7.3.0/lib" />
       <root url="file://E:/flutter/.pub-cache/hosted/pub.dartlang.org/platform-3.0.2/lib" />

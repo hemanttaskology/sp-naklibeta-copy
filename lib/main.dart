@@ -110,8 +110,6 @@ Future<void> main() async {
   );
   SystemChrome.setPreferredOrientations(
       [DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
-  NotificationController notificationController =
-      Get.put(NotificationController());
   MyJobCountController jobCountController = Get.put(MyJobCountController());
   runApp(GetMaterialApp(
     debugShowCheckedModeBanner: false,

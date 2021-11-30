@@ -33,9 +33,11 @@ class NotificationController extends GetxController {
   getNotifications() async {
     notificationList = [];
     final prefs = await SharedPreferences.getInstance();
-    Data userData = Data.fromJson(
-        json.decode(prefs.getString(AppConstants.USER_DETAIL).toString()));
-
+    late Data userData;
+    try{
+      userData = Data.fromJson(
+          json.decode(prefs.getString(AppConstants.USER_DETAIL).toString()));
+    }catch(e){}
     if (userData != null && userData.providerId.isNotEmpty) {
       BaseRequest request = new BaseRequest(
           providerModel: new BaseModel(providerId: userData.providerId));

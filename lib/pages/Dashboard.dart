@@ -40,7 +40,8 @@ class DashboardState extends State<Dashboard> {
     Notifications(),
     Settings(),
   ];
-  NotificationController notificationController = Get.find();
+  NotificationController notificationController =
+  Get.put(NotificationController());
   MyJobCountController myJobCountController = Get.find();
   BottomNavigationController landingPageController =
   Get.put(BottomNavigationController(), permanent: false);
@@ -323,7 +324,7 @@ class DashboardState extends State<Dashboard> {
         json.decode(prefs.getString(AppConstants.USER_DETAIL).toString()));
     if (userData != null) {
       setState(() {
-        activeUser = userData.status == 1 ? true : false;
+        activeUser = userData.is_active == 1 ? true : false;
       });
     }
   }
