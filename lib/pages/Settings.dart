@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'dart:io';
-
+import 'package:flutter_share/flutter_share.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
@@ -10,6 +10,7 @@ import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
 import 'package:nakli_beta_service_provider/common/ScreenArguments.dart';
 import 'package:nakli_beta_service_provider/common/Utility.dart' as Utility;
+import 'package:nakli_beta_service_provider/pages/About.dart';
 import 'package:nakli_beta_service_provider/pages/HelpAndSupport.dart';
 import 'package:nakli_beta_service_provider/pages/Login.dart';
 import 'package:nakli_beta_service_provider/pages/ProfileQualification.dart';
@@ -307,6 +308,41 @@ class SettingsState extends State<Settings> {
                 dense: true,
                 contentPadding: EdgeInsets.only(left: 12, right: 12),
                 onTap: () {
+                  share();
+                },
+                leading: Icon(
+                  Icons.person_add_alt,
+                  color: Theme.of(context).primaryColor,
+                ),
+                title: Text(
+                  'Invite Friend',
+                  style: TextStyle(
+                      color: Theme.of(context).primaryColor, fontSize: 18),
+                ),
+              ),
+              ListTile(
+                dense: true,
+                contentPadding: EdgeInsets.only(left: 12, right: 12),
+                onTap: () {
+                  Navigator.pushNamed(
+                    context,
+                    About.routeName,
+                  ).then((val) => val != null ? getUserData() : null);
+                },
+                leading: Icon(
+                  Icons.info_outline,
+                  color: Theme.of(context).primaryColor,
+                ),
+                title: Text(
+                  'About Us',
+                  style: TextStyle(
+                      color: Theme.of(context).primaryColor, fontSize: 18),
+                ),
+              ),
+              ListTile(
+                dense: true,
+                contentPadding: EdgeInsets.only(left: 12, right: 12),
+                onTap: () {
                   logout();
                 },
                 leading: Icon(
@@ -370,7 +406,7 @@ class SettingsState extends State<Settings> {
   Future selectOrTakePhoto(ImageSource imageSource) async {
     final pickedFile = await ImagePicker.pickImage(
       source: imageSource,
-      imageQuality: 60,
+      imageQuality: 20,
     );
 
     setState(() {
@@ -382,6 +418,16 @@ class SettingsState extends State<Settings> {
       } else
         print('No photo was selected or taken');
     });
+  }
+
+  share() async {
+    await FlutterShare.share(
+        title: 'NakliBeta',
+        text:
+        '',
+        linkUrl:
+        'https://play.google.com/store/apps/details?id=com.service.naklibeta.nakli_beta_service_provider',
+        chooserTitle: 'Example Chooser Title');
   }
 
   getUserData() async {
@@ -423,6 +469,17 @@ class SettingsState extends State<Settings> {
         case 3: //registration complete
           break;
         case 4:
+          if(userData.certificate!='')
+            profile = true;
+
+          if(userData.aadharCardBack!="")
+            kyc = true;
+
+          if(userData.mobile1!='')
+            references = true;
+
+          if(userData.mobile1!='')
+            trainingSchedule = true;
           profile = true;
           break;
         case 5:

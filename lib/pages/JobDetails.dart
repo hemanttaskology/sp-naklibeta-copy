@@ -128,7 +128,7 @@ class JobDetailsState extends State<JobDetails> {
                             (userData.status == 1)
                                 ? getAddress()
                                 : SizedBox.shrink(),
-                            (name.isNotEmpty && phone.isNotEmpty)
+                            (jobDetailData.status == 1 && name.isNotEmpty && phone.isNotEmpty)
                                 ? getCustomerDetail()
                                 : SizedBox.shrink(),
                             getQuotation(),
@@ -239,7 +239,10 @@ class JobDetailsState extends State<JobDetails> {
       nextJob(2);
     } else if (jobDetailData.status == JobStatusType.END_JOB.index) {
       //payment done
-      nextJob(3);
+      // nextJob(3);
+      setState(() {
+        jobDetailData.status = 8;
+      });
     }
   }
 

@@ -290,6 +290,14 @@ class MyJobsState extends State<MyJobs> {
       DateTime dateTime =
           new DateFormat("yyyy-MM-dd").parse(myJobsList[i].date);
       myJobsList[i].dateTime = dateTime;
+
+      //-------------Formatting Local date------------------------
+
+      var stringFormat = myJobsList[i].date;
+      var SplittedDate = stringFormat.split('-');
+      var FormattedDate = SplittedDate[2]+'-'+SplittedDate[1]+'-'+SplittedDate[0];
+      myJobsList[i].date = FormattedDate;
+
     }
   }
 }

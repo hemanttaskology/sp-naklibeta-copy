@@ -231,6 +231,13 @@ class JobListState extends State<JobList> {
       DateTime dateTime =
           new DateFormat("yyyy-MM-dd").parse(_searchResult[i].date);
       _searchResult[i].dateTime = dateTime;
+
+      //-------------Formatting Local date------------------------
+
+      var stringFormat = _searchResult[i].date;
+      var SplittedDate = stringFormat.split('-');
+      var FormattedDate = SplittedDate[2]+'-'+SplittedDate[1]+'-'+SplittedDate[0];
+      _searchResult[i].date = FormattedDate;
     }
   }
 

@@ -600,7 +600,7 @@ class UserKycState extends State<UserKyc> {
         });
         // final picker = ImagePicker();
         final pickedFile =
-        await ImagePicker.pickImage(source: imageSource);
+        await ImagePicker.pickImage(source: imageSource,imageQuality: 20);
         if (pickedFile != null) {
           String path = pickedFile.path;
           if (type == 1) {
@@ -633,7 +633,7 @@ class UserKycState extends State<UserKyc> {
         });
         // final picker = ImagePicker();
         final pickedFile =
-        await ImagePicker.pickImage(source: imageSource);
+        await ImagePicker.pickImage(source: imageSource,imageQuality: 20);
         if (pickedFile != null) {
           String path = pickedFile.path;
           if (type == 1) {

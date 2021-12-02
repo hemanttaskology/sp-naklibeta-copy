@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
+import 'package:nakli_beta_service_provider/common/Globals.dart';
 import 'package:nakli_beta_service_provider/common/JobType.dart';
 import 'package:nakli_beta_service_provider/common/Utility.dart' as Utility;
 import 'package:nakli_beta_service_provider/pages/JobList.dart';
@@ -55,7 +56,7 @@ class HomeState extends State<Home> {
             ? Center(
                 child: CircularProgressIndicator(),
               )
-            : userData.status != 1 ?Container(
+            : userData.is_active != 1 ?Container(
           padding: EdgeInsets.fromLTRB(40,0,40,0),
           child: const Center(
               child: Text('Welcome Naklibeta Service Partners. Please Submit Your KYC to Activate your Profile.', style: TextStyle(
@@ -234,7 +235,6 @@ class HomeState extends State<Home> {
   }
 
   void getData() {
-    print("timmer start");
     jobList = [];
     todayJobList = [];
     upcomingJobList = [];
@@ -250,9 +250,10 @@ class HomeState extends State<Home> {
             final prefs = await SharedPreferences.getInstance();
             setState(() {
               isLoading = false;
-              userData.status = jobResponse.data.status;
+              userData.status = jobResponse.data.is_active;
+              userData.is_active = jobResponse.data.is_active;
               prefs.setString(AppConstants.USER_DETAIL, json.encode(userData));
-
+              Globals.providerId = userData.providerId;
               message = jobResponse.message;
               if (jobResponse.data != null) {
                 if (jobResponse.data.category != null) {
@@ -378,7 +379,7 @@ class HomeState extends State<Home> {
                       Padding(
                         padding: EdgeInsets.only(left: 5, right: 5, top: 5),
                         child: Text(
-                          list[index].date,
+                          addDateTime( list[index].date ),
                           style: TextStyle(
                             color: Colors.grey,
                             fontWeight: FontWeight.bold,
@@ -438,4 +439,15 @@ class HomeState extends State<Home> {
       ),
     );
   }
+}
+
+
+
+addDateTime(ReceivedDate) {
+
+    //-------------Formatting Local date------------------------
+    var stringFormat = ReceivedDate;
+    var SplittedDate = stringFormat.split('-');
+    var FormattedDate = SplittedDate[2]+'-'+SplittedDate[1]+'-'+SplittedDate[0];
+    return  FormattedDate;
 }

@@ -60,7 +60,7 @@ class RegistrationState extends State<Registration> {
   bool isFromSettings = false;
   late String title = "";
   late ServicesResponse servicesResponse;
-  String termsAndConditionUrl = 'https://www.naklibeta.com/terms-and-condition';
+  String termsAndConditionUrl = 'https://naklibeta.com/pages/sp-terms.html';
   List<String> finalSelectionList = [];
   List<CategorySelectionList> selectionList = [];
   late ServiceDetails serviceDetail;

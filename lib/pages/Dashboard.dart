@@ -8,6 +8,7 @@ import 'package:nakli_beta_service_provider/Controllers/MyJobCountController.dar
 import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
     as AppConstants;
+import 'package:nakli_beta_service_provider/common/Globals.dart';
 import 'package:nakli_beta_service_provider/pages/MyJobs.dart';
 import 'package:nakli_beta_service_provider/pages/Notifications.dart';
 import 'package:nakli_beta_service_provider/pages/Settings.dart';
@@ -323,6 +324,7 @@ class DashboardState extends State<Dashboard> {
     Data userData = Data.fromJson(
         json.decode(prefs.getString(AppConstants.USER_DETAIL).toString()));
     if (userData != null) {
+      Globals.providerId = userData.providerId;
       setState(() {
         activeUser = userData.is_active == 1 ? true : false;
       });

@@ -1,6 +1,5 @@
 import 'dart:async';
 import 'dart:convert';
-
 import 'package:get/get.dart';
 import 'package:nakli_beta_service_provider/Controllers/JobCountService.dart';
 

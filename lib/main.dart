@@ -8,6 +8,7 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:get/get.dart';
 import 'package:nakli_beta_service_provider/Controllers/MyJobCountController.dart';
 import 'package:nakli_beta_service_provider/Controllers/NotificationController.dart';
+import 'package:nakli_beta_service_provider/pages/About.dart';
 import 'package:nakli_beta_service_provider/pages/Dashboard.dart';
 import 'package:nakli_beta_service_provider/pages/HelpAndSupport.dart';
 import 'package:nakli_beta_service_provider/pages/Home.dart';
@@ -29,6 +30,7 @@ import 'package:nakli_beta_service_provider/pages/SearchPage.dart';
 import 'package:nakli_beta_service_provider/pages/SelectCategoryPage.dart';
 import 'package:nakli_beta_service_provider/pages/Settings.dart';
 import 'package:nakli_beta_service_provider/pages/Splash.dart';
+import 'package:nakli_beta_service_provider/pages/Terms.dart';
 import 'package:nakli_beta_service_provider/pages/Training.dart';
 import 'package:nakli_beta_service_provider/pages/UserKYC.dart';
 import 'package:nakli_beta_service_provider/theme/custom_theme.dart';
@@ -166,6 +168,8 @@ Future<void> main() async {
             dataList: [],
             isRadioSelected: -1,
           ),
+      About.routeName: (context) => new About(),
+      Terms.routeName: (context) => new Terms(),
     },
   ));
 }

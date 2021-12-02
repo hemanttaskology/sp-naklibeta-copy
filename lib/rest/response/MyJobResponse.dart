@@ -34,7 +34,7 @@ class MyJobData {
   late int status;
   late String amount;
   late String details;
-  late DateTime dateTime;
+  var dateTime;
 
   MyJobData.fromJson(Map<String, dynamic> json) {
     id = json['id'];

@@ -46,10 +46,10 @@ import 'response/ServicesResponse.dart';
 
 class APIManager {
   //dev url
-  static const String BASE_URL = 'https://jobbanko.com/api/api/';
+  // static const String BASE_URL = 'https://jobbanko.com/api/api/';
 
   //live url
-  //  static const String BASE_URL = 'https://naklibeta.com/api/api/';
+  static const String BASE_URL = 'https://naklibeta.com/api/api/';
 
   static const String LOGIN = BASE_URL + 'serviceprovider/first';
   static const String LOGOUT = BASE_URL + 'serviceprovider/logout';
@@ -698,17 +698,17 @@ class APIManager {
       request.fields['degree'] = qualificationRequest.degree;
       request.fields['occupation'] = qualificationRequest.occupation;
       request.fields['gstin'] = qualificationRequest.gstin;
-      if(qualificationRequest.certificate!=null)
-      request.files.add(
-        http.MultipartFile.fromBytes(
-          "certificate",
-          qualificationRequest.certificate.readAsBytesSync(),
-          filename:
-              "certificate.${qualificationRequest.certificate.path.split(".").last}",
-          contentType: MediaType("image",
-              "${qualificationRequest.certificate.path.split(".").last}"),
-        ),
-      );
+      if (qualificationRequest.certificate != null)
+        request.files.add(
+          http.MultipartFile.fromBytes(
+            "certificate",
+            qualificationRequest.certificate.readAsBytesSync(),
+            filename:
+                "certificate.${qualificationRequest.certificate.path.split(".").last}",
+            contentType: MediaType("image",
+                "${qualificationRequest.certificate.path.split(".").last}"),
+          ),
+        );
       // request.files.add(
       //   http.MultipartFile.fromBytes(
       //     "profilePhoto",
@@ -761,39 +761,40 @@ class APIManager {
       request.fields['acNumber'] = kycRequest.acNumber;
       // request.fields['gstin'] = kycRequest.gstin;
 
-      if(kycRequest.aadharFront!=null)
-      request.files.add(
-        http.MultipartFile.fromBytes(
-          "aadharFront",
-          kycRequest.aadharFront.readAsBytesSync(),
-          filename:
-              "aadharFront.${kycRequest.aadharFront.path.split(".").last}",
-          contentType: MediaType(
-              "image", "${kycRequest.aadharFront.path.split(".").last}"),
-        ),
-      );
+      if (kycRequest.aadharFront != null)
+        request.files.add(
+          http.MultipartFile.fromBytes(
+            "aadharFront",
+            kycRequest.aadharFront.readAsBytesSync(),
+            filename:
+                "aadharFront.${kycRequest.aadharFront.path.split(".").last}",
+            contentType: MediaType(
+                "image", "${kycRequest.aadharFront.path.split(".").last}"),
+          ),
+        );
 
-      if(kycRequest.aadharBack!=null)
-      request.files.add(
-        http.MultipartFile.fromBytes(
-          "aadharBack",
-          kycRequest.aadharBack.readAsBytesSync(),
-          filename: "aadharBack.${kycRequest.aadharBack.path.split(".").last}",
-          contentType: MediaType(
-              "image", "${kycRequest.aadharBack.path.split(".").last}"),
-        ),
-      );
+      if (kycRequest.aadharBack != null)
+        request.files.add(
+          http.MultipartFile.fromBytes(
+            "aadharBack",
+            kycRequest.aadharBack.readAsBytesSync(),
+            filename:
+                "aadharBack.${kycRequest.aadharBack.path.split(".").last}",
+            contentType: MediaType(
+                "image", "${kycRequest.aadharBack.path.split(".").last}"),
+          ),
+        );
 
-      if(kycRequest.panCard!=null)
-      request.files.add(
-        http.MultipartFile.fromBytes(
-          "panCard",
-          kycRequest.panCard.readAsBytesSync(),
-          filename: "panCard.${kycRequest.panCard.path.split(".").last}",
-          contentType:
-              MediaType("image", "${kycRequest.panCard.path.split(".").last}"),
-        ),
-      );
+      if (kycRequest.panCard != null)
+        request.files.add(
+          http.MultipartFile.fromBytes(
+            "panCard",
+            kycRequest.panCard.readAsBytesSync(),
+            filename: "panCard.${kycRequest.panCard.path.split(".").last}",
+            contentType: MediaType(
+                "image", "${kycRequest.panCard.path.split(".").last}"),
+          ),
+        );
 
       http.Response response =
           await http.Response.fromStream(await request.send());

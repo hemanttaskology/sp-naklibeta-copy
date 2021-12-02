@@ -23,6 +23,7 @@ class JobResponse {
 
 class JobData {
   late int status;
+  late int is_active;
   late List<Job> today;
   late List<Job> upcoming;
   late List<Job> category;
@@ -32,7 +33,7 @@ class JobData {
 
   JobData.fromJson(Map<String, dynamic> json) {
     status = json['status'];
-
+    is_active = json['is_active'];
     if (json['today'] != null) {
       today = <Job>[];
       json['today'].forEach((v) {
@@ -59,6 +60,7 @@ class JobData {
     data['upcoming'] = this.upcoming.map((v) => v.toJson()).toList();
     data['category'] = this.category.map((v) => v.toJson()).toList();
     data['status'] = this.status;
+    data['is_active'] = this.is_active;
 
     return data;
   }

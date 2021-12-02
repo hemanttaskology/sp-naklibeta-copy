@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:nakli_beta_service_provider/common/AppConstants.dart'
@@ -151,6 +150,29 @@ class PaymentsCompleteState extends State<PaymentsComplete> {
                                 ],
                               ),
                             ),
+                            paymentsList[index].status==9||paymentsList[index].status==10?Padding(
+                              padding: const EdgeInsets.only(bottom: 0.0),
+                              child: Row(
+                                mainAxisAlignment:
+                                MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Text(
+                                    "Payment Status : ",
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.grey.shade600,
+                                        fontSize: 14),
+                                  ),
+                                  Text(
+                                    "Refunded",
+                                    overflow: TextOverflow.ellipsis,
+                                    style: TextStyle(
+                                        color: Colors.grey.shade600,
+                                        fontSize: 14),
+                                  ),
+                                ],
+                              ),
+                            ):Container(),
                           ],
                         ),
                       ),

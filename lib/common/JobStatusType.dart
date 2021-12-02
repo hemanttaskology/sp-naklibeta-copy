@@ -107,7 +107,7 @@ extension JobStatusTypeExtension on JobStatusType {
         return "Job Canceled By User";
 
       case JobStatusType.END_JOB:
-        return "PAYMENT RECEIVED";
+        return "JOB COMPLETE";
 
       case JobStatusType.PAYMENT_RECEIVED:
         return "JOB COMPLETE";
